@@ -1,0 +1,16 @@
+body {
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 75px;
+    border-bottom: solid 3px gray;
+}
+
+#logo {
+    float: left;
+    position: relative;
+    left: 200px;
+}
