@@ -7,10 +7,30 @@ header {
     position: relative;
     margin-bottom: 75px;
     border-bottom: solid 3px gray;
+    text-align: right;
 }
 
 #logo {
     float: left;
     position: relative;
     left: 200px;
+}
+
+nav ul {
+    padding-right: 120px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+    /* position: relative;
+    left: 900px;
+    bottom: 30px; */
+    font-size: large;
+    font-weight: bolder;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
 }
