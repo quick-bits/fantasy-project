@@ -17,19 +17,19 @@ sec1.appendChild(header);
 header.textContent= "bla nak akalnaljnj";
 var par = document.createElement('p');
 sec1.appendChild(par);
-par.textContent ='XSCzvzdvzdvzdvzdcsdcdcdnlsdnlsnvlsnvolsdvsdvdndicjaicaeepajviajipvapivaidnviaviaivadiciad'
+par.textContent ='XSCzvzdvzdvzdvzdcsdcdcdnlsdviaviaivadiciad'
 }
 
 var contentForm = document.getElementById ('contnet-form') ;
 contentForm.addEventListener('submit', handleSbmit) ;
 
 function handleSbmit (event) {
-
+    event.preventDefault();
 var selectCategory = event.target.category.value ;
 
 var select = document.getElementById ('category');
 
-if (  selectCategory=== "Dark Fantasy"  ){ 
+if (  selectCategory === "Dark Fantasy"  ){ 
 
  renderDark ();
 }
