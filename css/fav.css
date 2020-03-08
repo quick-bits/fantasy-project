@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+body {
+	background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed; 
+	font-family: 'Barlow', sans-serif;
+}
