@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
 #slider {
     width: 1100px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    border: solid rgb(39, 13, 63) 5px;
 }
 
 #slider figure {
@@ -49,4 +49,176 @@
     100% {
         left: -400%;
     }
+}
+
+#A p {
+    padding-top: 75px;
+}
+
+p span {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.neons {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.neons h1 {
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        color: #fff;
+        text-shadow: 0 0 10px #ff0800, 0 0 20px #ff0800, 0 0 30px#ff0800, 0 0 40px#ff0800, 0 0 50px #ff0800, 0 0 60px #ff0800, 0 0 70px #ff0800, 0 0 90px #ff0800;
+    }
+    to {
+        color: gray;
+        text-shadow: 0 0 20px #ff0800, 0 0 30px #ff0800, 0 0 40px #ff0800, 0 0 50px #ff0800, 0 0 60px #ff0800, 0 0 70px #ff0800, 0 0 80px #ff0800, 0 1 90px #ff0800;
+    }
+}
+
+section p {
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    padding-left: 70px;
+    padding-top: 50px;
+}
+
+section img {
+    float: left;
+    width: 450px;
+    height: 400px;
+    margin-left: 120px;
+    padding-top: 50px;
+}
+
+.double-spinner {
+    height: 48px;
+    width: 48px;
+    border: 5px solid rgba(232, 255, 101, 0.664);
+    border-radius: 50%;
+    border-top-color: rgb(255, 230, 0);
+    animation: rotate 1s 0s infinite linear normal;
+}
+
+.double-spinner::after {
+    content: '';
+    height: 40%;
+    width: 40%;
+    display: block;
+    margin: 10px auto;
+    border: inherit;
+    border-radius: inherit;
+    border-top-color: inherit;
+    animation: rotate .5s 0s infinite linear reverse;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#category-images,
+#1,
+#2,
+#3,
+#4 {
+    margin: 0 auto;
+    margin: 10px;
+    transition: .5s ease;
+    float: left;
+}
+
+#character-desctintion {
+    background-color: #310404;
+    /* background-image: url(/img/see.jpg); */
+    height: 450px;
+    font-size: large;
+    overflow: scroll;
+}
+
+#category-images img:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        color: #fff;
+        box-shadow: 0 0 10px #ff0800, 0 0 20px #ff0800, 0 0 30px#ff0800, 0 0 40px#ff0800, 0 0 50px #ff0800, 0 0 60px #ff0800, 0 0 70px #ff0800, 0 0 90px #ff0800;
+    }
+    to {
+        color: gray;
+        box-shadow: 0 0 20px #ff0800, 0 0 30px #ff0800, 0 0 40px #ff0800, 0 0 50px #ff0800, 0 0 60px #ff0800, 0 0 70px #ff0800, 0 0 80px #ff0800, 0 1 90px #ff0800;
+    }
+}
+
+
+/* 
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+} */
+
+#character-desctintion img {
+    width: 500px;
+    height: 550px;
+    background-color: #310404;
+}
+
+#formSet {
+    padding: 20px;
+    /* background-color: #310404; */
+    background-image: url(/img/see.jpg);
+    /* background-repeat: no-repeat; */
 }
