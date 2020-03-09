@@ -137,7 +137,7 @@ function handleSbmit(event) {
 
 
 ///////////////////////////////////////////////////////////////////////////////
-var imageSection = document.getElementById('dark');
+var imageSection = document.getElementById('drak');
 console.log(imageSection)
 darkConstructor.prototype.renderDark = function () {
     var header = document.createElement('h1');
