@@ -1,13 +1,18 @@
 body {
-    background-color: white;
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    font-family: 'Barlow', sans-serif;
+    color: white;
 }
 
 header {
+    /* background-color: #310404; */
+    background-image: url(/img/see.jpg);
     text-align: center;
     position: relative;
     margin-bottom: 75px;
     border-bottom: solid 3px gray;
     text-align: right;
+    height: 80px;
 }
 
 #logo {
@@ -18,6 +23,7 @@ header {
 
 nav ul {
     padding-right: 120px;
+    padding-top: 45px;
 }
 
 nav ul li {
@@ -32,5 +38,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
+    padding-top: 5px;
+}
+
+#imageCharacter {
+    border: 3px solid #310404;
+}
+
+#category-images {
+    border: 3px solid #310404;
+}
+
+nav ul li a:hover {
+    background-color: red;
+    box-shadow: 4px 4px 6px seashell;
 }
