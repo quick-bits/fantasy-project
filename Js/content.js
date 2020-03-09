@@ -3,7 +3,7 @@
 var darkarry = ['Baba Yaga', 'Death', 'Dracula', 'Joker', 'thanos aud'];
 var historicalArray = ['Zues', 'Temple Guard', 'Medusa', 'Loki', 'RA', 'Sleep Paralysis']
 var novleArray = ['conan', 'emma', 'harryPotter', 'jayGatsby', 'missHavisham', 'peterPan', 'RolandDeschain', 'sherlok', 'victorFrankenstien'];
-var animeArray = [];
+var animeArray = ['AllForOne','Naruto','Pikatchu','Saitama'];
 var historicalDiscreption = ['Zeus is the God of lighting, God of all Gods and ruler of Olympus. In Greek Mythology, Zeus is the one who defeated Cronus. He is the youngest brother of Hades and Poseidon, and married to Hera. Zeus is described as being cheeky, bossy and overly sensitive, which causes his temper to rise. He cares dearly about his brothers, and although he teases them a lot, he is also a source of reason. Zeus is a member of the 6 Traitors Dynasty.',
     'Anubis or Inpu, Anpu in Ancient Egyptian is the Greek name of the god of death, mummification, embalming, the afterlife, cemeteries, tombs, and the Underworld, in ancient Egyptian religion, usually depicted as a canine or a man with a canine head. Archeologists have identified Anubis\'s sacred animal as an Egyptian canid, the African golden wolf.', 'In Greek mythology, Medusa was a monster, a Gorgon, generally described as a winged human female with living venomous snakes in place of hair. Those who gazed upon her face would turn to stone. Most sources describe her as the daughter of Phorcys and Ceto, though the author Hyginus makes her the daughter of Gorgon and Ceto. According to Hesiod and Aeschylus, she lived and died on an island named Sarpedon, somewhere near Cisthene. The 2nd-century BCE novelist Dionysios Skytobrachion puts her somewhere in Libya, where Herodotus had said the Berbers originated her myth, as part of their religion.Medusa was beheaded by the hero Perseus, who thereafter used her head, which retained its ability to turn onlookers to stone, as a weapon until he gave it to the goddess Athena to place on her shield'
     , 'In Norse mythology, Loki is the God of mischief and trickery, his father was the giant Fárbauti and he is the stepbrother of Thor.', 'Ra was believed to rule in all parts of the created world: the sky, the Earth, and the underworld. He was the god of the sun, order, kings, and the sky. Ra was portrayed as a falcon and shared characteristics with the sky god Horus. The Egyptians believed that Ra created the seasons, plants, animals, and even humankind',
@@ -143,13 +143,8 @@ function handleSbmit(event) {
 }
 
 
-<<<<<<< HEAD
 ///////////////////////////////////////////////////////////////////////////////
 var imageSection = document.getElementById('drak');
-=======
-////////////////////////////////////RENDERING///////////////////////////////////////////
-var imageSection = document.getElementById('dark');
->>>>>>> cb949f79228505145ebdee70339d5cb2adf7ec5e
 console.log(imageSection)
 darkConstructor.prototype.renderDark = function () {
     var header = document.createElement('h1');
