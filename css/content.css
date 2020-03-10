@@ -5,20 +5,35 @@
 
 
 img  {  
-    width: 400px;
-    height: 400px;
-    float: center;
+    padding: 10px;
+    width: 450px;
+    height: 500px;
+
+
 }
 
-h2{
-    float: left;
-   padding-left: 100px;
-}
+/* h2{
+    text-align: center;
+  
+} */
 
 h1{
-    text-align: center;
+    text-align: center; 
 }
 p{
-    width: 80%;
-    padding-left: 150px;
+    width: 50%;
+ 
+   
+
 }
+/* 
+/* #fav15 {
+    border : 1px solid gray ;
+} */
+/* 
+#drak {
+    border : 1px solid gray ;
+}  */
+
+
+
