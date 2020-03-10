@@ -1,11 +1,11 @@
 'use strict'
 var darkFantasy = ['Baba Yaga', 'Death', 'Dracula', 'Joker', 'Thanos'];
 var Animes = ['Naruto', 'Pikatchu', 'Saitama', 'AllForOne'];
-var Hitorical = ['lokipic', 'medusa', 'RA', 'Zues', 'sleep paralysis', 'Temple Guard'];
+var Hitorical = ['Loki', 'medusa', 'RA', 'Zues', 'sleep paralysis', 'Temple Guard'];
 var novels = ['conan', 'emma', 'victorFrankenstien', 'peterpan', 'jaygatsby', 'missHavisham', 'RolandDeschain', 'sherlok', 'harryPotter'];
 
 function randomPick(min, max) {
-    var val = Math.floor(Math.random() * (max - min));
+    var val = Math.floor(Math.random() * (max - min + 1) - min);
     return val;
 }
 
@@ -37,11 +37,11 @@ function randomHistory() {
 
     // console.log(Hitorical[randomPick(0, History.all.length - 1)]);
     var index = randomPick(0, Hitorical.length - 1);
-    if (Hitorical[index] === 'lokipic') {
+    if (Hitorical[index] === 'Loki') {
 
-        imgs.setAttribute('src', `img/historicalfantasy/lokipic.png`);
+        imgs.setAttribute('src', `img/historicalfantasy/Loki.png`);
         describtion.textContent = " In Norse mythology, Loki is the God of mischief and trickery, his father was the giant Fárbauti and he is the stepbrother of Thor.  apper: 1. Thor ragnarok 2017 2. Thor 2011  3. the avengers end game 2019   4. the avengers 2012   5. Thor the dark world 2013 6. the avengers infinity war 2018 7. the avengers age of ultron 2015 8  lego marvel super hero: Maximum Overload (animition 2013) 9. Thor: Tales of Asgard (Fantasy / Action 2011)";
-        audioClips.setAttribute('src', 'aud/historicalfantasy/Medusa.mp3');
+        audioClips.setAttribute('src', 'aud/historicalfantasy/Loki.mp3');
         audioClips.load();
         audioClips.controls = true;
 
@@ -56,14 +56,14 @@ function randomHistory() {
     if (Hitorical[index] === 'Zues') {
         imgs.setAttribute('src', `img/historicalfantasy/Zues.png`);
         describtion.textContent = "Zeus is the God of lighting, God of all Gods and ruler of Olympus. In Greek Mythology, Zeus is the one who defeated Cronus. He is the youngest brother of Hades and Poseidon, and married to Hera. Zeus is described as being cheeky, bossy and overly sensitive, which causes his temper to rise. He cares dearly about his brothers, and although he teases them a lot, he is also a source of reason. Zeus is a member of the 6 Traitors Dynasty.";
-        audioClips.setAttribute('src', 'aud/historicalfantasy/Vo_zuus_zuus_arc_spawn_05.mp3');
+        audioClips.setAttribute('src', 'aud/historicalfantasy/Zues.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
     if (Hitorical[index] === 'sleep paralysis') {
         imgs.setAttribute('src', `img/historicalfantasy/sleep paralysis.png`);
         describtion.textContent = "Sleep paralysis is a feeling of being unable to move, it is most likely to occur during adolescence, the episodes last from a few seconds to a few minutes. Stress, sleep deprivation, and panic disorder may trigger it, an inability to move or speak is an essential feature, and there may be hallucinations. apper: 1.  Sleep-Paralysis (2004)  2.  Mara (I) (2018) 3. Slumber (I) (2017) 4. The X Files (1993–2018) Episode: Ghouli (2018). 5.  Lucid (2017)";
-        audioClips.setAttribute('src', 'aud/historicalfantasy/Sleep-paralysis.mp3');
+        audioClips.setAttribute('src', 'aud/historicalfantasy/Sleep Paralysis.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
@@ -88,7 +88,7 @@ function randomAnime() {
         audioClips.controls = true;
 
     }
-    if (Animes[index] === 'Pokemon') {
+    if (Animes[index] === 'Pikatchu') {
         imgs.setAttribute('src', `img/animefantasy/Pikatchu.png`);
         describtion.textContent = " A young boy with his trusted Pikachu travel the region with different companions and Pokémon in a quest to become a Pokémon Master… it’s a classic story that we’ve all heard in bits & pieces. This is no conventional fantasy series, and the newer episodes feel more aimed at kids.";
         audioClips.setAttribute('src', 'aud/animefsntsdy/Pikatchu.mp3');
@@ -98,11 +98,11 @@ function randomAnime() {
     if (Animes[index] === 'Saitama') {
         imgs.setAttribute('src', `img/animefantasy/Saitama.png`);
         describtion.textContent = "Saitama is an ordinary-looking bald man with a thin but well-built physique and is of average height and weight. He used to have a full head of short black hair but lost it due to the intensity of his hero training regimen. Saitama (サイタマ, Saitama) is the main protagonist of One-Punch Man and the most powerful being to exist in the series. ";
-        audioClips.setAttribute('src', 'aud/animefsntsdy/Satima.mp3');
+        audioClips.setAttribute('src', 'aud/animefsntsdy/Saitama.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
-    if (Animes[index] === 'Shigaraki') {
+    if (Animes[index] === 'AllForOne') {
         imgs.setAttribute('src', `img/animefantasy/AllForOne.png`);
         describtion.textContent = "After being mortally injured by All Might years ago, All For One's face seems to be made entirely of scar tissue, extending from above his upper lip and covering his entire head and the back of his neck. As such, he has no visible nose, ears, hair or eyes, though the outlines of eye sockets can be seen. As a result of having no eyes, he cannot see properly, but “sees” by using an infrared vision Quirk and by sensing the directions of vibrations in the area around him, similar to echolocation. ";
         audioClips.setAttribute('src', 'aud/animefsntsdy/AllForOne.mp3');

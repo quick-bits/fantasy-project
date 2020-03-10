@@ -1,3 +1,6 @@
+// when this code was created only i and god knew what was going on 
+// now only god knows 
+
 var newFav = [];
 var newFav1 = [];
 var newFav2 = [];
@@ -23,107 +26,121 @@ function createDarkObject() {
     }
 }
 createDarkObject();
-console.log('thjsddddddddddd', darkObj);
+// console.log('thjsddddddddddd', darkObj);
 
 function renderStorage() {
     var newContent = JSON.parse(localStorage.getItem('favStore'));
     newFav[0] = newContent;
+    console.log(newFav[0]);
     var newContent1 = JSON.parse(localStorage.getItem('favorite2'));
     newFav1[0] = newContent1;
+    console.log(newFav1[0]);
     var newContent2 = JSON.parse(localStorage.getItem('favorite3'));
     newFav2[0] = newContent2;
+    console.log(newFav2[0]);
     var newContent3 = JSON.parse(localStorage.getItem('favorite4'));
     newFav3[0] = newContent3;
+    console.log(newFav3[0]);
     var newContent4 = JSON.parse(localStorage.getItem('favorite5'));
     newFav4[0] = newContent4;
+    console.log(newFav4[0]);
 }
 renderStorage();
 
-var favoriteCharacter = document.getElementById('yourFavotite');
+var favoriteCharacter1 = document.getElementById('yourFavotite1');
+var favoriteCharacter2 = document.getElementById('yourFavotite2');
+var favoriteCharacter3 = document.getElementById('yourFavotite3');
+var favoriteCharacter4 = document.getElementById('yourFavotite4');
+var favoriteCharacter5 = document.getElementById('yourFavotite5');
 
 
-if (newFav[0] == 1) {
+if (newFav[0] == 'Baba Yaga') {
     // document.getElementsByClassName('sp-container').innrHTML = '';
     var h2E1 = document.createElement('h2');
-    favoriteCharacter.appendChild(h2E1);
+    favoriteCharacter1.appendChild(h2E1);
     h2E1.textContent = darkObj[0].name;
     var newImg = document.getElementById('vava');
     newImg.setAttribute('src', darkObj[0].img);
-    console.log(darkObj[0].img);
+    newImg.setAttribute('id', 'babaYaga');
+    // console.log(darkObj[0].img);
     var p1E1 = document.createElement('p');
-    favoriteCharacter.appendChild(p1E1);
+    favoriteCharacter1.appendChild(p1E1);
     p1E1.textContent = darkObj[0].descreption;
     var audE1 = document.createElement('audio');
-    favoriteCharacter.appendChild(audE1);
+    favoriteCharacter1.appendChild(audE1);
     audE1.setAttribute('src', darkObj[0].audE1);
     audE1.controls = true;
     audE1.load();
 
 }
-if (newFav1[0] == 2) {
+
+
+if (newFav1[0] == 'Death') {
     //     // document.getElementsByClassName('sp-container').innrHTML = '';
     var h2E1 = document.createElement('h2');
-    favoriteCharacter.appendChild(h2E1);
+    favoriteCharacter2.appendChild(h2E1);
     h2E1.textContent = darkObj[1].name;
     var newImg = document.getElementById('vava1');
     newImg.setAttribute('src', darkObj[1].img);
-    console.log(darkObj[1].img);
+    newImg.setAttribute('id', 'death');
+    // console.log(darkObj[1].img);
     var p1E1 = document.createElement('p');
-    favoriteCharacter.appendChild(p1E1);
+    favoriteCharacter2.appendChild(p1E1);
     p1E1.textContent = darkObj[1].descreption;
     var audE1 = document.createElement('audio');
-    favoriteCharacter.appendChild(audE1);
+    favoriteCharacter2.appendChild(audE1);
     audE1.setAttribute('src', darkObj[1].audE1);
     audE1.controls = true;
     audE1.load();
 }
-if (newFav2[0] == 3) {
+if (newFav2[0] == 'Dracula') {
     //     // document.getElementsByClassName('sp-container').innrHTML = '';
     var h2E1 = document.createElement('h2');
-    favoriteCharacter.appendChild(h2E1);
+    favoriteCharacter3.appendChild(h2E1);
     h2E1.textContent = darkObj[2].name;
     var newImg = document.getElementById('vava2');
     newImg.setAttribute('src', darkObj[2].img);
-    console.log(darkObj[2].img);
+    newImg.setAttribute('id', 'joker');
+    // console.log(darkObj[2].img);
     var p1E1 = document.createElement('p');
-    favoriteCharacter.appendChild(p1E1);
+    favoriteCharacter3.appendChild(p1E1);
     p1E1.textContent = darkObj[2].descreption;
     var audE1 = document.createElement('audio');
-    favoriteCharacter.appendChild(audE1);
+    favoriteCharacter3.appendChild(audE1);
     audE1.setAttribute('src', darkObj[2].audE1);
     audE1.controls = true;
     audE1.load();
 }
-if (newFav3[0] == 4) {
+if (newFav3[0] == 'Joker') {
     //     // document.getElementsByClassName('sp-container').innrHTML = '';
     var h2E1 = document.createElement('h2');
-    favoriteCharacter.appendChild(h2E1);
+    favoriteCharacter4.appendChild(h2E1);
     h2E1.textContent = darkObj[3].name;
     var newImg = document.getElementById('vava3');
     newImg.setAttribute('src', darkObj[3].img);
-    console.log(darkObj[3].img);
+    // console.log(darkObj[3].img);
     var p1E1 = document.createElement('p');
-    favoriteCharacter.appendChild(p1E1);
+    favoriteCharacter4.appendChild(p1E1);
     p1E1.textContent = darkObj[3].descreption;
     var audE1 = document.createElement('audio');
-    favoriteCharacter.appendChild(audE1);
+    favoriteCharacter4.appendChild(audE1);
     audE1.setAttribute('src', darkObj[3].audE1);
     audE1.controls = true;
     audE1.load();
 }
-if (newFav4[0] == 5) {
+if (newFav4[0] == 'thanos aud') {
     //     // document.getElementsByClassName('sp-container').innrHTML = '';
     var h2E1 = document.createElement('h2');
-    favoriteCharacter.appendChild(h2E1);
+    favoriteCharacter5.appendChild(h2E1);
     h2E1.textContent = darkObj[4].name;
     var newImg = document.getElementById('vava4');
     newImg.setAttribute('src', darkObj[4].img);
     console.log(darkObj[4].img);
     var p1E1 = document.createElement('p');
-    favoriteCharacter.appendChild(p1E1);
+    favoriteCharacter5.appendChild(p1E1);
     p1E1.textContent = darkObj[4].descreption;
     var audE1 = document.createElement('audio');
-    favoriteCharacter.appendChild(audE1);
+    favoriteCharacter5.appendChild(audE1);
     audE1.setAttribute('src', darkObj[4].audE1);
     audE1.controls = true;
     audE1.load();
