@@ -3,37 +3,291 @@
     height: auto;
 }
 
+#idBabaYaga {
+    width: 360px;
+    height: 355px;
+    float: left;
+    padding-left: 39px;
+    margin-left: -57px;
+    margin-top: -67px;
+}
 
-img  {  
+#idDeath {
+    width: 315px;
+    height: 364px;
+    float: left;
+    margin-top: -63px;
+    margin-left: -51px;
+}
+
+#idDracula {
+    width: 279px;
+    height: 350px;
+    float: left;
+    margin-top: -75px;
+}
+
+#idJoker {
+    width: 441px;
+    height: 322px;
+    float: left;
+    margin-top: -80px;
+    margin-left: -60px;
+}
+
+#idthanosaud {
+    margin-top: -54px;
     padding: 10px;
-    width: 450px;
-    height: 500px;
-
-
+    width: 504px;
+    height: 330px;
+    float: left;
+    margin-left: -115px;
 }
 
-/* h2{
+h1 {
     text-align: center;
-  
-} */
-
-h1{
-    text-align: center; 
 }
-p{
+
+p {
     width: 50%;
- 
+    height: 50%;
+    margin-left: 284px;
+    text-align: left;
    
-
 }
-/* 
-/* #fav15 {
-    border : 1px solid gray ;
+
+h2 {
+    margin-top: 32px;
+    margin-top: 18px;
+    margin-bottom: -12px;
+    margin-left: 283px;
+}
+
+/* positioning images  */
+
+#idLoki {
+    width: 552px;
+    height: 296px;
+    float: left;
+    margin-right: 100px;
+    margin-left: -29px;
+    margin-top: -60px;
+}
+
+#idMedusa {
+    width: 473px;
+    height: 412px;
+    float: left;
+    margin-right: 68px;
+}
+
+#idRA {
+    width: 326px;
+    height: 350px;
+    float: left;
+    margin-right: 100px;
+    margin-top: -78px;
+}
+
+#idsleepparalysis {
+    float: left;
+    width: 458px;
+    height: 350px;
+    margin-top: -70px;
+}
+
+/* #idTempleGuard{
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin-top: 10px;
 } */
-/* 
-#drak {
-    border : 1px solid gray ;
-}  */
 
+#idZues {
+    float: left;
+    width: 250px;
+    height: 309px;
+    margin-top: -51px;
+}
 
+#idTempleGuard {
+    float: left;
+    width: 250px;
+    height: 332px;
+    margin-top: -78px;
+}
 
+#idconan {
+    float: left;
+    width: 430px;
+    height: 410px;
+}
+
+#idemma {
+    float: left;
+    width: 250px;
+    height: 350px;
+}
+
+#idharryPotter {
+    float: left;
+    width: 250px;
+    height: 350px;
+}
+
+#idjayGatsby {
+    float: left;
+    width: 351px;
+    height: 371px;
+}
+
+#idmissHavisham {
+    float: left;
+    width: 331px;
+    height: 350px;
+}
+
+#idPeterPan {
+    float: left;
+    width: 411px;
+    height: 434px;
+    margin-top: 125px;
+}
+
+#idRolandDeschain {
+    float: left;
+    width: 250px;
+    height: 350px;
+}
+
+#idsherlok {
+    float: left;
+    width: 308px;
+    height: 414px;
+    margin-top: -25px;
+}
+
+#idAllForOne {
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin-top: 30px;
+}
+
+#idNaruto {
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin-top: -8px;
+    margin-left: 1px;
+}
+
+#idPikatchu {
+    float: left;
+    width: 252px;
+    height: 281px;
+    margin-left: -50px;
+    margin-top: 11px;
+}
+
+#idSaitama {
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin-top: 18px;
+    margin-left: 32px;
+}
+
+#idvictorFrankenstien {
+    width: 250px;
+    height: 331px;
+    margin-top: -62px;
+    float: left;
+}
+
+audio {
+    width: 206px;
+    height: 30px;
+    margin-left: 120px;
+}
+
+button {
+    margin-right: 13px;
+    padding-bottom: 1px;
+    margin-left: 32px;
+}
+
+/* audio buttons for each character */
+
+#Saitama {
+    margin-right: 13px;
+    padding-bottom: 1px;
+    margin-left: 4px;
+}
+
+div {
+    border: 5px solid darkgrey;
+    padding: 100px;
+    /* background-color: rgba(68, 24, 150, 0.3); */
+}
+
+#Pikatchu {
+    margin-left: 81px;
+}
+
+#BabaYaga {
+    margin-left: -325px;
+    margin-bottom: -10px;
+}
+
+#Death {
+    margin-left: -319px;
+}
+
+#Dracula {
+    margin-left: -326px;
+}
+
+#Joker {
+    margin-left: -326px;
+}
+
+#thanosaud {
+    margin-left: -324px;
+}
+
+#Medusa {
+    margin-left: 0px;
+}
+
+#Loki {
+    margin-left: 0px;
+}
+
+#RA {
+    margin-left: 0px;
+}
+
+#missHavisham {
+    margin-left: 0px;
+}
+
+#PeterPan {
+    margin-left: 0px;
+}
+
+#sherlok {
+    margin-left: 0px;
+}
+
+#conan {
+    margin-left: 0px;
+}
+
+#jayGatsby {
+    margin-left: 0px;
+}
+
+#sleepparalysis{
+    margin-left: 0px;
+}
