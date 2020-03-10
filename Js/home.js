@@ -1,6 +1,6 @@
 'use strict'
 var darkFantasy = ['Baba Yaga', 'Death', 'Dracula', 'Joker', 'Thanos'];
-var Animes = ['Naruto', 'Pokemon', 'Saitama', 'Shigaraki'];
+var Animes = ['Naruto', 'Pikatchu', 'Saitama', 'AllForOne'];
 var Hitorical = ['lokipic', 'medusa', 'RA', 'Zues', 'sleep paralysis', 'Temple Guard'];
 var novels = ['conan', 'emma', 'victorFrankenstien', 'peterpan', 'jaygatsby', 'missHavisham', 'RolandDeschain', 'sherlok', 'harryPotter'];
 
@@ -81,7 +81,7 @@ function randomHistory() {
 function randomAnime() {
     var index = randomPick(0, Animes.length - 1);
     if (Animes[index] === 'Naruto') {
-        imgs.setAttribute('src', `img/animefsntsdy/Naruto.png`);
+        imgs.setAttribute('src', `img/animefantasy/Naruto.png`);
         describtion.textContent = "Naruto Uzumaki (うずまきナルト, Uzumaki Naruto) is a shinobi of Konohagakure's Uzumaki clan. He became the jinchūriki of the Nine-Tails on the day of his birth — a fate that caused him to be shunned by most of Konoha throughout his childhood. After joining Team Kakashi, Naruto worked hard to gain the village's acknowledgement all the while chasing his dream to become Hokage.";
         audioClips.setAttribute('src', 'aud/animefsntsdy/Naruto.mp3');
         audioClips.load();
@@ -89,23 +89,23 @@ function randomAnime() {
 
     }
     if (Animes[index] === 'Pokemon') {
-        imgs.setAttribute('src', `img/animefsntsdy/Pokemon.png`);
+        imgs.setAttribute('src', `img/animefantasy/Pikatchu.png`);
         describtion.textContent = " A young boy with his trusted Pikachu travel the region with different companions and Pokémon in a quest to become a Pokémon Master… it’s a classic story that we’ve all heard in bits & pieces. This is no conventional fantasy series, and the newer episodes feel more aimed at kids.";
-        audioClips.setAttribute('src', 'aud/animefsntsdy/Pokemon.mp3');
+        audioClips.setAttribute('src', 'aud/animefsntsdy/Pikatchu.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
     if (Animes[index] === 'Saitama') {
-        imgs.setAttribute('src', `img/animefsntsdy/Saitama.png`);
+        imgs.setAttribute('src', `img/animefantasy/Saitama.png`);
         describtion.textContent = "Saitama is an ordinary-looking bald man with a thin but well-built physique and is of average height and weight. He used to have a full head of short black hair but lost it due to the intensity of his hero training regimen. Saitama (サイタマ, Saitama) is the main protagonist of One-Punch Man and the most powerful being to exist in the series. ";
         audioClips.setAttribute('src', 'aud/animefsntsdy/Satima.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
     if (Animes[index] === 'Shigaraki') {
-        imgs.setAttribute('src', `img/animefsntsdy/Shigaraki.png`);
+        imgs.setAttribute('src', `img/animefantasy/AllForOne.png`);
         describtion.textContent = "After being mortally injured by All Might years ago, All For One's face seems to be made entirely of scar tissue, extending from above his upper lip and covering his entire head and the back of his neck. As such, he has no visible nose, ears, hair or eyes, though the outlines of eye sockets can be seen. As a result of having no eyes, he cannot see properly, but “sees” by using an infrared vision Quirk and by sensing the directions of vibrations in the area around him, similar to echolocation. ";
-        audioClips.setAttribute('src', 'aud/animefsntsdy/Shigaraki.mp3');
+        audioClips.setAttribute('src', 'aud/animefsntsdy/AllForOne.mp3');
         audioClips.load();
         audioClips.controls = true;
     }

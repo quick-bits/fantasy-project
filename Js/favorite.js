@@ -28,13 +28,13 @@ console.log('thjsddddddddddd', darkObj);
 function renderStorage() {
     var newContent = JSON.parse(localStorage.getItem('favStore'));
     newFav[0] = newContent;
-    var newContent1 = JSON.parse(localStorage.getItem('favorite1'));
+    var newContent1 = JSON.parse(localStorage.getItem('favorite2'));
     newFav1[0] = newContent1;
-    var newContent2 = JSON.parse(localStorage.getItem('favorite2'));
+    var newContent2 = JSON.parse(localStorage.getItem('favorite3'));
     newFav2[0] = newContent2;
-    var newContent3 = JSON.parse(localStorage.getItem('favorite3'));
+    var newContent3 = JSON.parse(localStorage.getItem('favorite4'));
     newFav3[0] = newContent3;
-    var newContent4 = JSON.parse(localStorage.getItem('favorite4'));
+    var newContent4 = JSON.parse(localStorage.getItem('favorite5'));
     newFav4[0] = newContent4;
 }
 renderStorage();
