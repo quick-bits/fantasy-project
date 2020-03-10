@@ -46,6 +46,8 @@
 
 h1 {
     text-align: center;
+    color: whitesmoke;
+
 }
 
 p {
@@ -53,6 +55,7 @@ p {
     height: 50%;
     margin-left: 284px;
     text-align: left;
+    color: whitesmoke;
    
 }
 
@@ -61,6 +64,7 @@ h2 {
     margin-top: 18px;
     margin-bottom: -12px;
     margin-left: 283px;
+    color: whitesmoke;
 }
 
 /* positioning images  */
@@ -215,6 +219,10 @@ button {
     margin-right: 13px;
     padding-bottom: 1px;
     margin-left: 32px;
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
 }
 
 /* audio buttons for each character */
@@ -226,8 +234,11 @@ button {
 }
 
 div {
-    border: 5px solid darkgrey;
+    margin: 0 auto;
+    /* border: 5px solid darkgrey; */
     padding: 100px;
+    width: 80%;
+    padding: 80px;
     /* background-color: rgba(68, 24, 150, 0.3); */
 }
 
@@ -290,4 +301,11 @@ div {
 
 #sleepparalysis{
     margin-left: 0px;
+}
+
+fieldset{
+    display: inline-block;
+    margin-left: 196px;
+    border:1px solid rgb(151, 164, 168);
+    
 }
