@@ -162,6 +162,7 @@ darkConstructor.prototype.renderDark = function() {
         imageSection.appendChild(namesCharacter);
         namesCharacter.textContent = darkObj[i].name;
         image1.setAttribute('id', 'hey')
+       
         var audio1 = document.createElement('audio');
         audio1.setAttribute('src', darkObj[i].audio)
         imageSection.appendChild(audio1);

@@ -1,39 +1,53 @@
-#logo {
+
+ #logo {
+
     width: 150px;
     height: auto;
 }
 
 
 img  {  
-    padding: 10px;
-    width: 450px;
-    height: 500px;
-
-
+    width: 400px;
+    height: 400px;
+    float: center;
 }
 
-/* h2{
-    text-align: center;
-  
-} */
+h2{
+    float: left;
+   padding-left:100px;
+}
 
 h1{
-    text-align: center; 
+    text-align: center;
+    padding:5px ;
+   border: 5px solid;
+    color: whitesmoke;
+    font-family: 'Lobster', cursive;
+    font-family: 'Special Elite', cursive;
+    font-family: 'Shojumaru', cursive;
+    font-size: xx-large;
+    font-weight: 600;
 }
 p{
-    width: 50%;
- 
-   
-
+    width: 80%;
+    padding-left: 150px;
 }
-/* 
-/* #fav15 {
-    border : 1px solid gray ;
-} */
-/* 
-#drak {
-    border : 1px solid gray ;
-}  */
 
-
-
+#contnet-form{
+    width: 75%;
+    
+    padding-left:340px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+#fav15{
+    width: 70%;
+    padding-left:375px;
+    margin: 8px 0;
+    box-sizing: border-box;
+   
+}
+button{
+    margin-right: 500px;
+   margin-left: 25%;
+}
