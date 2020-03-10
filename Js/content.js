@@ -287,53 +287,40 @@ anmieConstructor.prototype.renderAnime = function() {
 
 
 
-var contentButton = document.getElementById('drak');
-
-contentButton.addEventListener('click', addFavorit);
 
 
-// this.name = name;
-// this.audio = `aud/darkfantasy/${name}.mp3`;
-// this.img = `img/darkfantasy/${name}.png`;
-// this.descreption
+imageSection.addEventListener('click', addFavorit);
+
 function addFavorit(event) {
-    if (event.target.id === 'favorite1') {
+    if (event.target.id === 'Baba Yaga') {
         var newFav = [];
-        newFav.push(1);
+        newFav.push(darkarry[0]);
         var favDark = JSON.stringify(newFav);
         localStorage.setItem('favStore', favDark);
     }
-    if (event.target.id === 'favorite2') {
+    if (event.target.id === 'Death') {
         var newFav1 = [];
-        newFav1.push(2);
+        newFav1.push(darkarry[1]);
         var favDark = JSON.stringify(newFav1);
         localStorage.setItem('favorite2', favDark);
 
     }
-    if (event.target.id === 'favorite3') {
+    if (event.target.id === 'Dracula') {
         var newFav2 = [];
-        newFav2.push(3);
+        newFav2.push(darkarry[2]);
         var favDark = JSON.stringify(newFav2);
         localStorage.setItem('favorite3', favDark);
     }
-    if (event.target.id === 'favorite4') {
+    if (event.target.id === 'Joker') {
         var newFav3 = [];
-        newFav3.push(4);
+        newFav3.push(darkarry[3]);
         var favDark = JSON.stringify(newFav3);
         localStorage.setItem('favorite4', favDark);
     }
-    if (event.target.id === 'favorite5') {
+    if (event.target.id === 'thanos aud') {
         var newFav4 = [];
-        newFav4.push(5);
+        newFav4.push(darkarry[4]);
         var favDark = JSON.stringify(newFav4);
         localStorage.setItem('favorite5', favDark);
     }
 }
-
-
-
-
-// function setLocal() {
-//     var favDark = JSON.stringify(newFav);
-//     localStorage.setItem('favStore', favDark);
-// }
