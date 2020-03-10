@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
+
+#formSet{
+    display: inline-block;
+    width: 70%;
+}
+#quizSection{
+    background-image: url(/img/see.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: 20cm;
+
+}
+#quizImage{
+    float: right;
+    height: 25em;
+    width: 25em;
+}
+
 #slider {
     width: 1100px;
     height: auto;
@@ -51,9 +68,7 @@
     }
 }
 
-#A p {
-    padding-top: 75px;
-}
+
 
 p span {
     font-size: larger;
@@ -88,11 +103,14 @@ p span {
 }
 
 #A p {
+    padding-top: 50px;
+    text-align: justify;
     width: 600px;
     height: 450px;
     overflow: hidden;
     padding-left: 70px;
-    padding-top: 50px;
+    line-height: 21px;
+    
 }
 
 #A img {
@@ -172,8 +190,8 @@ p span {
 #formSet {
     padding: 20px;
     /* background-color: #310404; */
-    background-image: url(/img/see.jpg);
-    /* background-repeat: no-repeat; */
+    /* background-image: url(/img/see.jpg); */
+    
 }
 
 #character-desctintion {

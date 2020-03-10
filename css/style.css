@@ -6,7 +6,8 @@ body {
 
 header {
     /* background-color: #310404; */
-    background-image: url(/img/see.jpg);
+    /* background-image: url(/img/see.jpg); */
+    background-color: black;
     text-align: center;
     position: relative;
     margin-bottom: 75px;
@@ -19,6 +20,7 @@ header {
     float: left;
     position: relative;
     left: 200px;
+    height: 80px;
 }
 
 nav ul {
