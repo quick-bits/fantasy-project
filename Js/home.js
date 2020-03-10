@@ -240,3 +240,75 @@ function categorySelect(event) {
         randomHistory();
     }
 }
+
+submitform.addEventListener('submit', personalQuiz);
+var quizName = document.getElementById('user-name')
+var quizSection = document.getElementById('quizSection')
+var quizQuestion = document.getElementById('quizImage')
+var firstQuiz = document.getElementById('question1')
+var secondQuiz = document.getElementById('question2')
+var thirdQuiz = document.getElementById('question3')
+var forthQuiz = document.getElementById('question4')
+var fifthQuiz = document.getElementById('question5')
+var sixthQuiz = document.getElementById('question6')
+var seventhQuiz = document.getElementById('question7')
+var quizParagraph = document.createElement('p')
+function personalQuiz(event) {
+    event.preventDefault();
+    console.log(event.target.id);
+
+    if (firstQuiz.checked === true) {
+        quizSection.appendChild(quizParagraph);
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Dracula`
+        quizQuestion.setAttribute('src', 'img/darkfantasy/Dracula.png')
+
+    }
+    else if (secondQuiz.checked === true) {
+        
+        quizSection.appendChild(quizParagraph);
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Saitama`
+        quizQuestion.setAttribute('src', 'img/animefantasy/Saitama.png')
+
+    }
+    else if (thirdQuiz.checked === true) {
+        quizSection.appendChild(quizParagraph);
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Thanos`
+        quizQuestion.setAttribute('src', 'img/darkfantasy/thanos aud.png')
+
+    }
+    else if (forthQuiz.checked === true) {
+        quizSection.appendChild(quizParagraph);
+        quizParagraph.innerHTML = `${quizName.value}We think You Are Going To Like Joker`
+        quizQuestion.setAttribute('src', 'img/darkfantasy/Joker.png')
+
+    }
+    else if (fifthQuiz.checked === true) {
+        quizSection.appendChild(quizParagraph);
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Zues`
+        quizQuestion.setAttribute('src', 'img/historicalfantasy/Zues.png')
+
+    }
+    else if (sixthQuiz.checked === true) {
+        quizSection.appendChild(quizParagraph);
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Naruto`
+        quizQuestion.setAttribute('src', 'img/animefantasy/Naruto.png')
+
+    }
+    else if (seventhQuiz.checked === true) {
+        quizSection.appendChild(quizParagraph);
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Sherlok Holmes`
+        quizQuestion.setAttribute('src', 'img/novlsfantasy/sherlok.png')
+
+    }
+
+    else {
+        quizSection.appendChild(quizParagraph);
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Nasus... oh oh i mean Anubis`
+        quizQuestion.setAttribute('src', 'img/historicalfantasy/Temple Guard.png')
+
+    }
+}
+
+
+
+
