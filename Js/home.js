@@ -1,7 +1,7 @@
 'use strict'
-var darkFantasy = ['Baba Yaga', 'Death', 'Dracula', 'Joker', 'Thanos'];
+var darkFantasy = ['BabaYaga', 'Death', 'Dracula', 'Joker', 'Thanos'];
 var Animes = ['Naruto', 'Pikatchu', 'Saitama', 'AllForOne'];
-var Hitorical = ['Loki', 'medusa', 'RA', 'Zues', 'sleep paralysis', 'Temple Guard'];
+var Hitorical = ['Loki', 'medusa', 'RA', 'Zues', 'sleepparalysis', 'TempleGuard'];
 var novels = ['conan', 'emma', 'victorFrankenstien', 'peterpan', 'jaygatsby', 'missHavisham', 'RolandDeschain', 'sherlok', 'harryPotter'];
 
 function randomPick(min, max) {
@@ -61,14 +61,14 @@ function randomHistory() {
         audioClips.controls = true;
     }
     if (Hitorical[index] === 'sleep paralysis') {
-        imgs.setAttribute('src', `img/historicalfantasy/sleep paralysis.png`);
+        imgs.setAttribute('src', `img/historicalfantasy/sleepparalysis.png`);
         describtion.textContent = "Sleep paralysis is a feeling of being unable to move, it is most likely to occur during adolescence, the episodes last from a few seconds to a few minutes. Stress, sleep deprivation, and panic disorder may trigger it, an inability to move or speak is an essential feature, and there may be hallucinations. apper: 1.  Sleep-Paralysis (2004)  2.  Mara (I) (2018) 3. Slumber (I) (2017) 4. The X Files (1993–2018) Episode: Ghouli (2018). 5.  Lucid (2017)";
-        audioClips.setAttribute('src', 'aud/historicalfantasy/Sleep Paralysis.mp3');
+        audioClips.setAttribute('src', 'aud/historicalfantasy/SleepParalysis.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
     if (Hitorical[index] === 'Temple Guard') {
-        imgs.setAttribute('src', `img/historicalfantasy/Temple Guard.png`);
+        imgs.setAttribute('src', `img/historicalfantasy/TempleGuard.png`);
         describtion.textContent = "Anubis or Inpu, Anpu in Ancient Egyptian is the Greek name of the god of death, mummification, embalming, the afterlife, cemeteries, tombs, and the Underworld, in ancient Egyptian religion, usually depicted as a canine or a man with a canine head. Archeologists have identified Anubis's sacred animal as an Egyptian canid, the African golden wolf.";
         audioClips.setAttribute('src', 'aud/historicalfantasy/Temple Guard.mp3');
         audioClips.load();
@@ -115,10 +115,10 @@ function randomAnime() {
 
 function randomDark() {
     var index = randomPick(0, darkFantasy.length - 1);
-    if (darkFantasy[index] === 'Baba Yaga') {
-        imgs.setAttribute('src', `img/darkfantasy/Baba Yaga.png`);
+    if (darkFantasy[index] === 'BabaYaga') {
+        imgs.setAttribute('src', `img/darkfantasy/BabaYaga.png`);
         describtion.textContent = "Baba Yaga: In March 1964, Hellboy first encountered Baba Yaga  while investigating a string of children disappearing. The disappearances were Baba Yaga's doing as she  kidnapped the children to satisfy her cannibalistic hunger.When Baba Yaga was counting the fingers  of the dead in a cemetery, she attempted to use  a skull (that once belonged to a former devotee named Katayev) to lead her to the Sabbath.";
-        audioClips.setAttribute('src', 'aud/darkfantasy/Baba Yaga.mp3');
+        audioClips.setAttribute('src', 'aud/darkfantasy/BabaYaga.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
@@ -178,7 +178,7 @@ function renderImages() {
         audioClips.controls = true;
     }
     if (novels[index] === 'harryPotter') {
-        imgs.setAttribute('src', `img/novlsfantasy/haryypotter.png`);
+        imgs.setAttribute('src', `img/novlsfantasy/harrypotter.png`);
         describtion.textContent = "Harry James Potter is the titular protagonist of J. K. Rowling's Harry Potter series. The majority of the books' plot covers seven years in the life of the orphan Harry, who, on his eleventh birthday, learns he is a wizard. Thus, he attends Hogwarts School of Witchcraft and Wizardry to practice magic under the guidance of the kindly headmaster Albus Dumbledore and other school professors along with his best friends Ron Weasley and Hermione Granger.";
         audioClips.setAttribute('src', 'aud/novlsfantasy/harrypotter.mp3');
         audioClips.load();
@@ -253,62 +253,51 @@ var fifthQuiz = document.getElementById('question5')
 var sixthQuiz = document.getElementById('question6')
 var seventhQuiz = document.getElementById('question7')
 var quizParagraph = document.createElement('p')
+
 function personalQuiz(event) {
     event.preventDefault();
     console.log(event.target.id);
 
     if (firstQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Dracula`
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be Dracula "Dangrous"`
         quizQuestion.setAttribute('src', 'img/darkfantasy/Dracula.png')
 
-    }
-    else if (secondQuiz.checked === true) {
-        
+    } else if (secondQuiz.checked === true) {
+
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Saitama`
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be punshing Like Saitama`
         quizQuestion.setAttribute('src', 'img/animefantasy/Saitama.png')
 
-    }
-    else if (thirdQuiz.checked === true) {
+    } else if (thirdQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Thanos`
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be a "inevitable" Like Thanos`
         quizQuestion.setAttribute('src', 'img/darkfantasy/thanos aud.png')
 
-    }
-    else if (forthQuiz.checked === true) {
+    } else if (forthQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value}We think You Are Going To Like Joker`
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be crazy Like the Joker`
         quizQuestion.setAttribute('src', 'img/darkfantasy/Joker.png')
 
-    }
-    else if (fifthQuiz.checked === true) {
+    } else if (fifthQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Zues`
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be Like Zues`
         quizQuestion.setAttribute('src', 'img/historicalfantasy/Zues.png')
 
-    }
-    else if (sixthQuiz.checked === true) {
+    } else if (sixthQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Naruto`
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be Like Naruto`
         quizQuestion.setAttribute('src', 'img/animefantasy/Naruto.png')
 
-    }
-    else if (seventhQuiz.checked === true) {
+    } else if (seventhQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Sherlok Holmes`
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be intelligent Like Sherlok Holmes`
         quizQuestion.setAttribute('src', 'img/novlsfantasy/sherlok.png')
 
-    }
-
-    else {
+    } else {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Nasus... oh oh i mean Anubis`
+        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Nasus..oh oh we mean Anubis`
         quizQuestion.setAttribute('src', 'img/historicalfantasy/Temple Guard.png')
 
     }
 }
-
-
-
-

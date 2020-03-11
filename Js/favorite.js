@@ -180,10 +180,10 @@ function createHistoricalObject() {
 createHistoricalObject();
 
 
-function renderStorage2() {
+function renderStorage7() {
     var newContent = JSON.parse(localStorage.getItem('favStoreHistory'));
-    newFav[1] = newContent;
-
+    newFav = newContent;
+    console.log('sdfs', newContent);
     var newContent1 = JSON.parse(localStorage.getItem('favStoreHistory1'));
     newFav1[0] = newContent1;
 
@@ -200,14 +200,14 @@ function renderStorage2() {
     newFav5[0] = newContent5;
 
 }
-renderStorage2();
+renderStorage7();
 
 
 // ['Zues', 'TempleGuard', 'Medusa', 'Loki', 'RA', 'SleepParalysis']
 
 function histoRender() {
 
-    if (newFav[0] == 'Zues') {
+    if (newFav == 'Zues') {
         var h2E1 = document.createElement('h2');
         favoriteCharacter1.appendChild(h2E1);
         h2E1.textContent = historicalObj[0].name;
@@ -233,7 +233,7 @@ function histoRender() {
         favoriteCharacter1.appendChild(newImg);
         newImg.setAttribute('src', historicalObj[1].img);
         newImg.setAttribute('id', 'TempleGuard');
-        // console.log(darkObj[0].img);
+        console.log(darkObj[0].img);
         var p1E1 = document.createElement('p');
         favoriteCharacter1.appendChild(p1E1);
         p1E1.textContent = historicalObj[1].descreption[1];
@@ -315,6 +315,7 @@ function histoRender() {
         audE1.controls = true;
         audE1.load();
     }
+
 }
 histoRender();
 
@@ -630,7 +631,7 @@ function novelsRender() {
         audE1.controls = true;
         audE1.load();
     }
-    if (newFav7[0] == 'sherlok') {
+    if (newFav7 == 'sherlok') {
         var h2E1 = document.createElement('h2');
         favoriteCharacter1.appendChild(h2E1);
         h2E1.textContent = novelObj[7].name;
@@ -648,7 +649,7 @@ function novelsRender() {
         audE1.controls = true;
         audE1.load();
     }
-    if (newFav8[0] == 'victorFrankenstien') {
+    if (newFav8 == 'victorFrankenstien') {
         var h2E1 = document.createElement('h2');
         favoriteCharacter1.appendChild(h2E1);
         h2E1.textContent = novelObj[8].name;
