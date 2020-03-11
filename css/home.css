@@ -1,35 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
-
-#formSet{
+#formSet {
     display: inline-block;
     width: 70%;
 }
-#quizSection{
+
+#quizSection {
     background-image: url(/img/see.jpg);
     /* background-repeat: no-repeat; */
     background-size: 20cm;
-
 }
-#quizImage{
+
+#quizImage {
     float: right;
     height: 25em;
     width: 25em;
+    position: relative;
 }
 
 #slider {
     width: 1100px;
-    height: auto;
+    height: 850px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     overflow: hidden;
 }
 
 #slider figure {
     position: relative;
     width: 500%;
+    height: 850px;
     margin: 0px;
     left: 0px;
-    animation: 10s slider infinite;
+    animation: 15s slider infinite;
 }
 
 #slider figure img {
@@ -68,8 +71,6 @@
     }
 }
 
-
-
 p span {
     font-size: larger;
     font-weight: bolder;
@@ -102,23 +103,29 @@ p span {
     }
 }
 
+#A {
+    border-top: solid 10px #310404;
+    border-bottom: solid 5px #310404;
+}
+
 #A p {
     padding-top: 50px;
     text-align: justify;
     width: 600px;
     height: 450px;
     overflow: hidden;
-    padding-left: 70px;
+    padding-left: 20px;
     line-height: 21px;
-    
+    border-left: solid 5px #310404;
 }
 
 #A img {
     float: left;
-    width: 450px;
-    height: 400px;
+    width: 400px;
+    height: 350px;
     margin-left: 120px;
-    padding-top: 50px;
+    padding-top: 95px;
+    padding-right: 60px;
 }
 
 .double-spinner {
@@ -191,7 +198,6 @@ p span {
     padding: 20px;
     /* background-color: #310404; */
     /* background-image: url(/img/see.jpg); */
-    
 }
 
 #character-desctintion {

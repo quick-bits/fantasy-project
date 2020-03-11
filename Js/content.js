@@ -1,7 +1,7 @@
 'use strict'
 
-var darkarry = ['Baba Yaga', 'Death', 'Dracula', 'Joker', 'thanos aud'];
-var historicalArray = ['Zues', 'Temple Guard', 'Medusa', 'Loki', 'RA', 'Sleep Paralysis']
+var darkarry = ['BabaYaga', 'Death', 'Dracula', 'Joker', 'Thanos'];
+var historicalArray = ['Zues', 'TempleGuard', 'Medusa', 'Loki', 'RA', 'SleepParalysis']
 var novleArray = ['conan', 'emma', 'harryPotter', 'jayGatsby', 'missHavisham', 'PeterPan', 'RolandDeschain', 'sherlok', 'victorFrankenstien'];
 var animeArray = ['AllForOne', 'Naruto', 'Pikatchu', 'Saitama'];
 var historicalDiscreption = ['Zeus is the God of lighting, God of all Gods and ruler of Olympus. In Greek Mythology, Zeus is the one who defeated Cronus. He is the youngest brother of Hades and Poseidon, and married to Hera. Zeus is described as being cheeky, bossy and overly sensitive, which causes his temper to rise. He cares dearly about his brothers, and although he teases them a lot, he is also a source of reason. Zeus is a member of the 6 Traitors Dynasty.',
@@ -223,7 +223,7 @@ novelConstructor.prototype.renderNovels = function() {
         var header = document.createElement('h1');
         imageSection.appendChild(header);
         header.textContent = "Novel fantasy section";
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 9; i++) {
 
             var image1 = document.createElement('img');
             image1.setAttribute('src', novelObj[i].img)
@@ -267,7 +267,7 @@ anmieConstructor.prototype.renderAnime = function() {
         namesCharacter.textContent = animeObj[i].name;
         var btnFav = document.createElement('button');
         imageSection.appendChild(btnFav);
-        btnFav.setAttribute('id', darkObj[i].name);
+        btnFav.setAttribute('id', animeObj[i].name);
         btnFav.textContent = 'Add To Favorite';
         var audio1 = document.createElement('audio');
         audio1.setAttribute('src', animeObj[i].audio);
@@ -292,7 +292,7 @@ anmieConstructor.prototype.renderAnime = function() {
 imageSection.addEventListener('click', addFavorit);
 
 function addFavorit(event) {
-    if (event.target.id === 'Baba Yaga') {
+    if (event.target.id === 'BabaYaga') {
         var newFav = [];
         newFav.push(darkarry[0]);
         var favDark = JSON.stringify(newFav);
@@ -317,10 +317,147 @@ function addFavorit(event) {
         var favDark = JSON.stringify(newFav3);
         localStorage.setItem('favorite4', favDark);
     }
-    if (event.target.id === 'thanos aud') {
+    if (event.target.id === 'Thanos') {
         var newFav4 = [];
         newFav4.push(darkarry[4]);
         var favDark = JSON.stringify(newFav4);
         localStorage.setItem('favorite5', favDark);
+    }
+}
+
+////////////history//////////////////
+
+
+
+imageSection.addEventListener('click', FavoritHistory);
+
+function FavoritHistory(event) {
+    if (event.target.id === 'Zues') {
+        var newFav = [];
+        newFav.push(historicalArray[0]);
+        var favDark = JSON.stringify(newFav);
+        localStorage.setItem('favStoreHistory', favDark);
+    }
+    if (event.target.id === 'TempleGuard') {
+        var newFav1 = [];
+        newFav1.push(historicalArray[1]);
+        var favDark = JSON.stringify(newFav1);
+        localStorage.setItem('favStoreHistory1', favDark);
+
+    }
+    if (event.target.id === 'Medusa') {
+        var newFav2 = [];
+        newFav2.push(historicalArray[2]);
+        var favDark = JSON.stringify(newFav2);
+        localStorage.setItem('favStoreHistory2', favDark);
+    }
+    if (event.target.id === 'Loki') {
+        var newFav3 = [];
+        newFav3.push(historicalArray[3]);
+        var favDark = JSON.stringify(newFav3);
+        localStorage.setItem('favStoreHistory3', favDark);
+    }
+    if (event.target.id === 'RA') {
+        var newFav4 = [];
+        newFav4.push(historicalArray[4]);
+        var favDark = JSON.stringify(newFav4);
+        localStorage.setItem('favStoreHistory4', favDark);
+    }
+    if (event.target.id === 'SleepParalysis') {
+        var newFav4 = [];
+        newFav4.push(historicalArray[5]);
+        var favDark = JSON.stringify(newFav4);
+        localStorage.setItem('favStoreHistory5', favDark);
+    }
+}
+/////////////////Anime
+// var animeArray = ['AllForOne', 'Naruto', 'Pikatchu', 'Saitama'];
+imageSection.addEventListener('click', addFavorit4);
+
+function addFavorit4(event) {
+    if (event.target.id === 'AllForOne') {
+        var newFav = [];
+        newFav.push(animeArray[0]);
+        var favanime = JSON.stringify(newFav);
+        localStorage.setItem('favStoreanime', favanime);
+    }
+    if (event.target.id === 'Naruto') {
+        var newFav1 = [];
+        newFav1.push(animeArray[1]);
+        var favanime = JSON.stringify(newFav1);
+        localStorage.setItem('favorite2anime', favanime);
+    }
+    if (event.target.id === 'Pikatchu') {
+        var newFav2 = [];
+        newFav2.push(animeArray[2]);
+        var favanime = JSON.stringify(newFav2);
+        localStorage.setItem('favorite3anime', favanime);
+    }
+    if (event.target.id === 'Saitama') {
+        var newFav3 = [];
+        newFav3.push(animeArray[3]);
+        var favanime = JSON.stringify(newFav3);
+        localStorage.setItem('favorite4anime', favanime);
+    }
+
+}
+////////////////////////novles
+var novleArray = ['conan', 'emma', 'harryPotter', 'jayGatsby', 'missHavisham', 'PeterPan', 'RolandDeschain', 'sherlok', 'victorFrankenstien'];
+imageSection.addEventListener('click', novlFavorit);
+
+function novlFavorit(event) {
+    if (event.target.id === 'conan') {
+        var newFav = [];
+        newFav.push(novleArray[0]);
+        var favanime = JSON.stringify(newFav);
+        localStorage.setItem('favStorenovl1', favanime);
+    }
+    if (event.target.id === 'emma') {
+        var newFav1 = [];
+        newFav1.push(novleArray[1]);
+        var favanime = JSON.stringify(newFav1);
+        localStorage.setItem('favStorenovl2', favanime);
+    }
+    if (event.target.id === 'harryPotter') {
+        var newFav2 = [];
+        newFav2.push(novleArray[2]);
+        var favanime = JSON.stringify(newFav2);
+        localStorage.setItem('favStorenovl3', favanime);
+    }
+    if (event.target.id === 'jayGatsby') {
+        var newFav3 = [];
+        newFav3.push(novleArray[3]);
+        var favanime = JSON.stringify(newFav3);
+        localStorage.setItem('favStorenovl4', favanime);
+    }
+    if (event.target.id === 'missHavisham') {
+        var newFav4 = [];
+        newFav4.push(novleArray[4]);
+        var favanime = JSON.stringify(newFav4);
+        localStorage.setItem('favStorenovl5', favanime);
+    }
+    if (event.target.id === 'PeterPan') {
+        var newFav5 = [];
+        newFav5.push(novleArray[5]);
+        var favanime = JSON.stringify(newFav5);
+        localStorage.setItem('favStorenovl6', favanime);
+    }
+    if (event.target.id === 'RolandDeschain') {
+        var newFav6 = [];
+        newFav6.push(novleArray[6]);
+        var favanime = JSON.stringify(newFav6);
+        localStorage.setItem('favStorenovl7', favanime);
+    }
+    if (event.target.id === 'sherlok') {
+        var newFav7 = [];
+        newFav7.push(novleArray[7]);
+        var favanime = JSON.stringify(newFav7);
+        localStorage.setItem('favStorenovl8', favanime);
+    }
+    if (event.target.id === 'victorFrankenstien') {
+        var newFav8 = [];
+        newFav8.push(novleArray[8]);
+        var favanime = JSON.stringify(newFav8);
+        localStorage.setItem('favStorenovl9', favanime);
     }
 }
