@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow');
 body {
-    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed; 
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
     font-family: 'Barlow', sans-serif;
 }
+
 .sp-container h2 {
     position: absolute;
     top: 25%;
@@ -17,26 +18,31 @@ body {
     animation: blurFadeInOut 3s ease-in backwards;
     padding: 3%;
 }
+
 .sp-container h2.frame-5 {
     -webkit-animation: none;
     animation: none;
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
+
 .sp-container h2.frame-5 span {
     -webkit-animation: blurFadeIn 3s ease-in 2s backwards;
     animation: blurFadeIn 3s ease-in 2s backwards;
     color: transparent;
     text-shadow: 0px 0px 1px #fff;
 }
+
 .sp-container h2.frame-5 span:nth-child(2) {
     -webkit-animation-delay: 3s;
     animation-delay: 5s;
 }
+
 .sp-container h2.frame-5 span:nth-child(3) {
     -webkit-animation-delay: 4s;
     animation-delay: 9s;
 }
+
 @keyframes blurFadeIn {
     0% {
         opacity: 0;
@@ -53,4 +59,194 @@ body {
         text-shadow: 0px 0px 1px #fff;
         transform: scale(1);
     }
+}
+
+#yourFavotite1 {
+    display: block;
+    width: 600px;
+    margin: 30px auto;
+}
+
+
+/* #yourFavotite2{
+    display: inline-block;
+    width: 600px;
+    
+}
+#yourFavotite3{
+    display: inline-block;
+    width: 600px;
+    margin-left: 120px;
+    margin-right: 50px;
+    
+}
+#yourFavotite4{
+    display: inline-block;
+    width: 600px;
+    
+}
+#yourFavotite5{
+    display: inline-block;
+    width: 600px;
+    margin-left: 120px;
+    margin-right: 50px;}
+     */
+
+#yourFavotite1 p {
+    text-align: justify;
+    text-shadow: 1px 1px 4px #0000FF;
+}
+
+#yourFavotite1 h2 {
+    text-shadow: 1px 1px 5px #FF0000, 1px 1px 10px #0000FF;
+    text-align: center;
+}
+
+audio:hover,
+audio:focus,
+audio:active {
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+
+#yourFavotite1 audio {
+    margin: 15px 150px 100px 150px;
+    transition: all 0.5s linear;
+}
+
+#babaYaga {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 510px;
+}
+
+#death {
+    display: block;
+    margin: 0px auto;
+}
+
+#joker {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 510px;
+}
+
+#dracula {
+    display: block;
+    width: 470px;
+    height: 510px;
+    margin: 0px auto;
+}
+
+#thanos {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 510px;
+}
+
+#emma {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 510px;
+}
+
+#naruto {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 510px;
+}
+
+#allforone {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 510px;
+}
+
+#saitama {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 510px;
+}
+
+#pikatchu {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 510px;
+}
+
+#harryPotter {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 510px;
+}
+
+#jayGatsby {
+    display: block;
+    width: 470px;
+    height: 510px;
+}
+
+#sherlok {
+    display: block;
+    margin: 0 auto;
+    width: 470px;
+    height: 400px;
+}
+
+#victorFrankenstien {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+}
+
+#Zues {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+}
+
+#TempleGuard {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+}
+
+#Medusa {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+}
+
+#Loki {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+}
+
+#RA {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
+}
+
+#SleepParalysis {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+    height: 360px;
 }

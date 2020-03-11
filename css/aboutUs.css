@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+body {
+    background: rgb(2, 0, 36);
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+}
+
+img {
+    border-radius: 50%;
+    width: 250px;
+    /* float: left; ; */
+}
+
+div.picNo1 {
+    position: relative;
+    width: 20%;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 3%;
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    float: left;
+    margin-left: 5%;
+}
+
+.picNo2 {
+    position: relative;
+    width: 20%;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 3%;
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    float: left;
+    margin-left: 200px;
+}
+
+
+/* div.picNo1{
+    width: 20%;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 3%;
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    float: left;
+  }
+  div.picNo1{
+    width: 20%;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 3%;
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    float: left;
+  }
+  div.picNo1{
+    width: 20%;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 3%;
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    float: left;
+    margin-left: 20%;
+  }
+  div.picNo1{
+    width: 20%;
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 3%;
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    float: left;
+  } */
+
+p {
+    padding-left: 55px;
+    color: wheat;
+}
+
+.img1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.picNo1:hover .img1 {
+    opacity: 0.3;
+}
+
+.picNo1:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    /* background-color: #4CAF50; */
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.picNo2:hover .img1 {
+    opacity: 0.3;
+}
+
+.picNo2:hover .middle {
+    opacity: 1;
+}

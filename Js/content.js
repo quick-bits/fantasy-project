@@ -5,7 +5,7 @@ var historicalArray = ['Zues', 'TempleGuard', 'Medusa', 'Loki', 'RA', 'SleepPara
 var novleArray = ['conan', 'emma', 'harryPotter', 'jayGatsby', 'missHavisham', 'PeterPan', 'RolandDeschain', 'sherlok', 'victorFrankenstien'];
 var animeArray = ['AllForOne', 'Naruto', 'Pikatchu', 'Saitama'];
 var historicalDiscreption = ['Zeus is the God of lighting, God of all Gods and ruler of Olympus. In Greek Mythology, Zeus is the one who defeated Cronus. He is the youngest brother of Hades and Poseidon, and married to Hera. Zeus is described as being cheeky, bossy and overly sensitive, which causes his temper to rise. He cares dearly about his brothers, and although he teases them a lot, he is also a source of reason. Zeus is a member of the 6 Traitors Dynasty.',
-    'Anubis or Inpu, Anpu in Ancient Egyptian is the Greek name of the god of death, mummification, embalming, the afterlife, cemeteries, tombs, and the Underworld, in ancient Egyptian religion, usually depicted as a canine or a man with a canine head. Archeologists have identified Anubis\'s sacred animal as an Egyptian canid, the African golden wolf.', 'In Greek mythology, Medusa was a monster, a Gorgon, generally described as a winged human female with living venomous snakes in place of hair. Those who gazed upon her face would turn to stone. Most sources describe her as the daughter of Phorcys and Ceto, though the author Hyginus makes her the daughter of Gorgon and Ceto. According to Hesiod and Aeschylus, she lived and died on an island named Sarpedon, somewhere near Cisthene. The 2nd-century BCE novelist Dionysios Skytobrachion puts her somewhere in Libya, where Herodotus had said the Berbers originated her myth, as part of their religion.Medusa was beheaded by the hero Perseus, who thereafter used her head, which retained its ability to turn onlookers to stone, as a weapon until he gave it to the goddess Athena to place on her shield', 'In Norse mythology, Loki is the God of mischief and trickery, his father was the giant Fárbauti and he is the stepbrother of Thor.', 'Ra was believed to rule in all parts of the created world: the sky, the Earth, and the underworld. He was the god of the sun, order, kings, and the sky. Ra was portrayed as a falcon and shared characteristics with the sky god Horus. The Egyptians believed that Ra created the seasons, plants, animals, and even humankind',
+    'Anubis or Inpu, Anpu in Ancient Egyptian is the Greek name of the god of death, mummification, embalming, the afterlife, cemeteries, tombs, and the Underworld, in ancient Egyptian religion, usually depicted as a canine or a man with a canine head. Archeologists have identified Anubis\'s sacred animal as an Egyptian canid, the African golden wolf.', 'In Greek mythology, Medusa was a monster, a Gorgon, generally described as a winged human female with living venomous snakes in place of hair. Those who gazed upon her face would turn to stone. Most sources describe her as the daughter of Phorcys and Ceto, though the author Hyginus makes her the daughter of Gorgon and Ceto. According to Hesiod and Aeschylus, she lived and died on an island named Sarpedon, somewhere near Cisthene. ', 'In Norse mythology, Loki is the God of mischief and trickery, his father was the giant Fárbauti and he is the stepbrother of Thor.', 'Ra was believed to rule in all parts of the created world: the sky, the Earth, and the underworld. He was the god of the sun, order, kings, and the sky. Ra was portrayed as a falcon and shared characteristics with the sky god Horus. The Egyptians believed that Ra created the seasons, plants, animals, and even humankind',
     'Sleep paralysis is a feeling of being unable to move, it is most likely to occur during adolescence, the episodes last from a few seconds to a few minutes. Stress, sleep deprivation, and panic disorder may trigger it, an inability to move or speak is an essential feature, and there may be hallucinations.',
     ''
 ];
@@ -122,23 +122,23 @@ function handleSbmit(event) {
     var select = document.getElementById('category');
 
     if (selectCategory === "Dark Fantasy") {
-        imageSection.innerHTML = "";
+        imageSection1.innerHTML = "";
         DarkfantasyObject.renderDark();
 
 
     } else if (selectCategory === "Historical Fantasy") {
 
-        imageSection.innerHTML = "";
+        imageSection1.innerHTML = "";
 
         HistoricalfantasyObject.renderHistorical();
     } else if (selectCategory === "Novels Fantasy") {
 
-        imageSection.innerHTML = "";
+        imageSection1.innerHTML = "";
 
         novelFantasyObject.renderNovels();
     } else if (selectCategory === "Anime Fantasy") {
 
-        imageSection.innerHTML = "";
+        imageSection1.innerHTML = "";
 
         anmieFantasyObject.renderAnime();
     }
@@ -146,12 +146,19 @@ function handleSbmit(event) {
 
 
 ///////////////////////////////////////////////////////////////////////////////
-var imageSection = document.getElementById('dark');
+
+///////////////////////////////////////////////////////////////////////////////
+var imageSection1 = document.getElementById('drak');
 darkConstructor.prototype.renderDark = function() {
+
+
     var header = document.createElement('h1');
-    imageSection.appendChild(header);
+    imageSection1.appendChild(header);
     header.textContent = "Dark fantasy section";
     for (var i = 0; i < 5; i++) {
+
+        var imageSection = document.createElement('div');
+        imageSection1.appendChild(imageSection);
 
         var image1 = document.createElement('img');
         image1.setAttribute('src', darkObj[i].img)
@@ -161,7 +168,7 @@ darkConstructor.prototype.renderDark = function() {
         var namesCharacter = document.createElement('h2');
         imageSection.appendChild(namesCharacter);
         namesCharacter.textContent = darkObj[i].name;
-        image1.setAttribute('id', 'hey')
+        image1.setAttribute('id', `id${darkObj[i].name}`)
         var audio1 = document.createElement('audio');
         audio1.setAttribute('src', darkObj[i].audio)
         imageSection.appendChild(audio1);
@@ -183,16 +190,20 @@ darkConstructor.prototype.renderDark = function() {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
-var imageSection = document.getElementById('history');
+
+var imageSection1 = document.getElementById('history');
 historicalConstructor.prototype.renderHistorical = function() {
     var header = document.createElement('h1');
-    imageSection.appendChild(header);
+    imageSection1.appendChild(header);
     header.textContent = "Historical fantasy section";
 
     for (var i = 0; i < 6; i++) {
 
+        var imageSection = document.createElement('div');
+        imageSection1.appendChild(imageSection);
         var image1 = document.createElement('img');
-        image1.setAttribute('src', historicalObj[i].img)
+        image1.setAttribute('src', historicalObj[i].img);
+        image1.setAttribute('id', `id${historicalObj[i].name}`);
         imageSection.appendChild(image1);
         var namesCharacter = document.createElement('h2');
         imageSection.appendChild(namesCharacter);
@@ -217,16 +228,19 @@ historicalConstructor.prototype.renderHistorical = function() {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-var imageSection = document.getElementById('novel');
+var imageSection1 = document.getElementById('novel');
 novelConstructor.prototype.renderNovels = function() {
 
         var header = document.createElement('h1');
-        imageSection.appendChild(header);
+        imageSection1.appendChild(header);
         header.textContent = "Novel fantasy section";
-        for (var i = 0; i < 9; i++) {
+        for (var i = 0; i < 10; i++) {
 
+            var imageSection = document.createElement('div');
+            imageSection1.appendChild(imageSection);
             var image1 = document.createElement('img');
             image1.setAttribute('src', novelObj[i].img)
+            image1.setAttribute('id', `id${novelObj[i].name}`);
             imageSection.appendChild(image1);
 
             var namesCharacter = document.createElement('h2');
@@ -252,44 +266,46 @@ novelConstructor.prototype.renderNovels = function() {
 
     }
     /////////////////////////////////////////////////////////////////////////////////////////////////////
-var imageSection = document.getElementById('renderAnime');
+var imageSection1 = document.getElementById('renderAnime');
 anmieConstructor.prototype.renderAnime = function() {
-    var header = document.createElement('h1');
-    imageSection.appendChild(header);
-    header.textContent = "Anime fantasy section";
-    for (var i = 0; i < 4; i++) {
+        var header = document.createElement('h1');
+        imageSection1.appendChild(header);
+        header.textContent = "Anime fantasy section";
+        for (var i = 0; i < 4; i++) {
 
-        var image1 = document.createElement('img');
-        image1.setAttribute('src', animeObj[i].img)
-        imageSection.appendChild(image1);
-        var namesCharacter = document.createElement('h2');
-        imageSection.appendChild(namesCharacter);
-        namesCharacter.textContent = animeObj[i].name;
-        var btnFav = document.createElement('button');
-        imageSection.appendChild(btnFav);
-        btnFav.setAttribute('id', animeObj[i].name);
-        btnFav.textContent = 'Add To Favorite';
-        var audio1 = document.createElement('audio');
-        audio1.setAttribute('src', animeObj[i].audio);
-        imageSection.appendChild(audio1);
-        audio1.controls = true;
-        audio1.load();
+            var imageSection = document.createElement('div');
+            imageSection1.appendChild(imageSection);
+            var image1 = document.createElement('img');
+            image1.setAttribute('src', animeObj[i].img)
+            image1.setAttribute('id', `id${animeObj[i].name}`);
+            imageSection.appendChild(image1);
+            var namesCharacter = document.createElement('h2');
+            imageSection.appendChild(namesCharacter);
+            namesCharacter.textContent = animeObj[i].name;
+            var btnFav = document.createElement('button');
+            imageSection.appendChild(btnFav);
+            btnFav.setAttribute('id', animeObj[i].name);
+            btnFav.textContent = 'Add To Favorite';
+            var audio1 = document.createElement('audio');
+            audio1.setAttribute('src', animeObj[i].audio);
+            imageSection.appendChild(audio1);
+            audio1.controls = true;
+            audio1.load();
 
 
-        var namesCharacter = document.createElement('p');
-        imageSection.appendChild(namesCharacter);
-        namesCharacter.textContent = this.descreption[i];
+            var namesCharacter = document.createElement('p');
+            imageSection.appendChild(namesCharacter);
+            namesCharacter.textContent = this.descreption[i];
 
+        }
     }
-}
-
-////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////
 
 
 
 
 
-imageSection.addEventListener('click', addFavorit);
+imageSection1.addEventListener('click', addFavorit);
 
 function addFavorit(event) {
     if (event.target.id === 'BabaYaga') {
@@ -329,7 +345,7 @@ function addFavorit(event) {
 
 
 
-imageSection.addEventListener('click', FavoritHistory);
+imageSection1.addEventListener('click', FavoritHistory);
 
 function FavoritHistory(event) {
     if (event.target.id === 'Zues') {
@@ -372,7 +388,7 @@ function FavoritHistory(event) {
 }
 /////////////////Anime
 // var animeArray = ['AllForOne', 'Naruto', 'Pikatchu', 'Saitama'];
-imageSection.addEventListener('click', addFavorit4);
+imageSection1.addEventListener('click', addFavorit4);
 
 function addFavorit4(event) {
     if (event.target.id === 'AllForOne') {
@@ -403,7 +419,7 @@ function addFavorit4(event) {
 }
 ////////////////////////novles
 var novleArray = ['conan', 'emma', 'harryPotter', 'jayGatsby', 'missHavisham', 'PeterPan', 'RolandDeschain', 'sherlok', 'victorFrankenstien'];
-imageSection.addEventListener('click', novlFavorit);
+imageSection1.addEventListener('click', novlFavorit);
 
 function novlFavorit(event) {
     if (event.target.id === 'conan') {

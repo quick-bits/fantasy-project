@@ -49,13 +49,9 @@ function renderStorage() {
 renderStorage();
 
 var favoriteCharacter1 = document.getElementById('yourFavotite1');
-var favoriteCharacter2 = document.getElementById('yourFavotite2');
-var favoriteCharacter3 = document.getElementById('yourFavotite3');
-var favoriteCharacter4 = document.getElementById('yourFavotite4');
-var favoriteCharacter5 = document.getElementById('yourFavotite5');
+
 
 function darkRender() {
-
     if (newFav[0] == 'BabaYaga') {
         // document.getElementsByClassName('sp-container').innrHTML = '';
         var h2E1 = document.createElement('h2');
@@ -73,81 +69,85 @@ function darkRender() {
         audE1.setAttribute('src', darkObj[0].audio);
         audE1.controls = true;
         audE1.load();
-
     }
-
-
     if (newFav1[0] == 'Death') {
         //     // document.getElementsByClassName('sp-container').innrHTML = '';
-        var h2E1 = document.createElement('h2');
-        favoriteCharacter2.appendChild(h2E1);
-        h2E1.textContent = darkObj[1].name;
-        var newImg = document.getElementById('vava1');
+        var newImg = document.createElement('img');
+        favoriteCharacter1.appendChild(newImg);
         newImg.setAttribute('src', darkObj[1].img);
         newImg.setAttribute('id', 'death');
+        var h2E1 = document.createElement('h2');
+        favoriteCharacter1.appendChild(h2E1);
+        h2E1.textContent = darkObj[1].name;
         // console.log(darkObj[1].img);
         var p1E1 = document.createElement('p');
-        favoriteCharacter2.appendChild(p1E1);
+        favoriteCharacter1.appendChild(p1E1);
         p1E1.textContent = darkObj[1].descreption[1];
         var audE1 = document.createElement('audio');
-        favoriteCharacter2.appendChild(audE1);
+        favoriteCharacter1.appendChild(audE1);
         audE1.setAttribute('src', darkObj[1].audio);
         audE1.controls = true;
         audE1.load();
     }
     if (newFav2[0] == 'Dracula') {
         //     // document.getElementsByClassName('sp-container').innrHTML = '';
-        var h2E1 = document.createElement('h2');
-        favoriteCharacter3.appendChild(h2E1);
-        h2E1.textContent = darkObj[2].name;
-        var newImg = document.getElementById('vava2');
+        var newImg = document.createElement('img');
+        favoriteCharacter1.appendChild(newImg);
         newImg.setAttribute('src', darkObj[2].img);
-        newImg.setAttribute('id', 'joker');
+        newImg.setAttribute('id', 'dracula');
+        var h2E1 = document.createElement('h2');
+        favoriteCharacter1.appendChild(h2E1);
+        h2E1.textContent = darkObj[2].name;
         // console.log(darkObj[2].img);
         var p1E1 = document.createElement('p');
-        favoriteCharacter3.appendChild(p1E1);
+        favoriteCharacter1.appendChild(p1E1);
         p1E1.textContent = darkObj[2].descreption[2];
         var audE1 = document.createElement('audio');
-        favoriteCharacter3.appendChild(audE1);
+        favoriteCharacter1.appendChild(audE1);
         audE1.setAttribute('src', darkObj[2].audio);
         audE1.controls = true;
         audE1.load();
     }
     if (newFav3[0] == 'Joker') {
         //     // document.getElementsByClassName('sp-container').innrHTML = '';
-        var h2E1 = document.createElement('h2');
-        favoriteCharacter4.appendChild(h2E1);
-        h2E1.textContent = darkObj[3].name;
-        var newImg = document.getElementById('vava3');
+        var newImg = document.createElement('img');
+        favoriteCharacter1.appendChild(newImg);
         newImg.setAttribute('src', darkObj[3].img);
+        newImg.setAttribute('id', 'joker');
+        var h2E1 = document.createElement('h2');
+        favoriteCharacter1.appendChild(h2E1);
+        h2E1.textContent = darkObj[3].name;
         // console.log(darkObj[3].img);
         var p1E1 = document.createElement('p');
-        favoriteCharacter4.appendChild(p1E1);
+        favoriteCharacter1.appendChild(p1E1);
         p1E1.textContent = darkObj[3].descreption[3];
         var audE1 = document.createElement('audio');
-        favoriteCharacter4.appendChild(audE1);
+        favoriteCharacter1.appendChild(audE1);
         audE1.setAttribute('src', darkObj[3].audio);
         audE1.controls = true;
         audE1.load();
     }
     if (newFav4[0] == 'Thanos') {
         //     // document.getElementsByClassName('sp-container').innrHTML = '';
-        var h2E1 = document.createElement('h2');
-        favoriteCharacter5.appendChild(h2E1);
-        h2E1.textContent = darkObj[4].name;
-        var newImg = document.getElementById('vava4');
+        var newImg = document.createElement('img');
+        favoriteCharacter1.appendChild(newImg);
         newImg.setAttribute('src', darkObj[4].img);
+        newImg.setAttribute('id', 'thanos')
+        var h2E1 = document.createElement('h2');
+        favoriteCharacter1.appendChild(h2E1);
+        h2E1.textContent = darkObj[4].name;
         console.log(darkObj[4].img);
         var p1E1 = document.createElement('p');
-        favoriteCharacter5.appendChild(p1E1);
+        favoriteCharacter1.appendChild(p1E1);
         p1E1.textContent = darkObj[4].descreption[4];
         var audE1 = document.createElement('audio');
-        favoriteCharacter5.appendChild(audE1);
+        favoriteCharacter1.appendChild(audE1);
         audE1.setAttribute('src', darkObj[4].audio);
         audE1.controls = true;
         audE1.load();
     }
 }
+
 darkRender();
 
 //////////////////history
@@ -239,7 +239,7 @@ function histoRender() {
         p1E1.textContent = historicalObj[1].descreption[1];
         var audE1 = document.createElement('audio');
         favoriteCharacter1.appendChild(audE1);
-        audE1.setAttribute('src', historicalObj[0].audio);
+        audE1.setAttribute('src', historicalObj[1].audio);
         audE1.controls = true;
         audE1.load();
     }
@@ -396,7 +396,7 @@ function animeRender() {
         p1E1.textContent = animeObj[1].descreption[1];
         var audE1 = document.createElement('audio');
         favoriteCharacter1.appendChild(audE1);
-        audE1.setAttribute('src', animeObj[0].audio);
+        audE1.setAttribute('src', animeObj[1].audio);
         audE1.controls = true;
         audE1.load();
     }
@@ -537,7 +537,7 @@ function novelsRender() {
         p1E1.textContent = novelObj[1].descreption[1];
         var audE1 = document.createElement('audio');
         favoriteCharacter1.appendChild(audE1);
-        audE1.setAttribute('src', novelObj[0].audio);
+        audE1.setAttribute('src', novelObj[1].audio);
         audE1.controls = true;
         audE1.load();
     }
@@ -660,10 +660,10 @@ function novelsRender() {
         // console.log(darkObj[0].img);
         var p1E1 = document.createElement('p');
         favoriteCharacter1.appendChild(p1E1);
-        p1E1.textContent = historicalObj[5].descreption[5];
+        p1E1.textContent = novelObj[8].descreption[8];
         var audE1 = document.createElement('audio');
         favoriteCharacter1.appendChild(audE1);
-        audE1.setAttribute('src', historicalObj[5].audio);
+        audE1.setAttribute('src', novelObj[8].audio);
         audE1.controls = true;
         audE1.load();
     }
