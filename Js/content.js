@@ -364,9 +364,9 @@ function FavoritHistory(event) {
         localStorage.setItem('favStoreHistory4', favDark);
     }
     if (event.target.id === 'SleepParalysis') {
-        var newFav4 = [];
-        newFav4.push(historicalArray[5]);
-        var favDark = JSON.stringify(newFav4);
+        var newFav5 = [];
+        newFav5.push(historicalArray[5]);
+        var favDark = JSON.stringify(newFav5);
         localStorage.setItem('favStoreHistory5', favDark);
     }
 }

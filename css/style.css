@@ -10,17 +10,22 @@ header {
     background-color: black;
     text-align: center;
     position: relative;
-    margin-bottom: 75px;
     border-bottom: solid 3px gray;
     text-align: right;
     height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 #logo {
     float: left;
     position: relative;
     left: 200px;
-    height: 80px;
+    bottom: 20px;
+    height: 125px;
 }
 
 nav ul {
@@ -53,6 +58,5 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: red;
-    box-shadow: 4px 4px 6px seashell;
+    box-shadow: 4px 4px 6px 6px rgba(187, 16, 16, 0.911);
 }
