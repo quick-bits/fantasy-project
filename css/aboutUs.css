@@ -3,6 +3,10 @@ body {
     background: rgb(2, 0, 36);
     background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
 }
+*{
+    font-family: 'Risque', cursive;
+
+}
 
 img {
     border-radius: 50%;
