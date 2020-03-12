@@ -4,7 +4,10 @@ body {
     font-family: 'Barlow', sans-serif;
     color: white;
 }
+*{
+    font-family: 'Risque', cursive;
 
+}
 header {
     /* background-color: #310404; */
     /* background-image: url(/img/see.jpg); */
