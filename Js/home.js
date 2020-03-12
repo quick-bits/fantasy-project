@@ -260,43 +260,43 @@ function personalQuiz(event) {
 
     if (firstQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be Dracula "Dangrous"`
+        quizParagraph.innerHTML = `${quizName.value} We think you will love Dracula`
         quizQuestion.setAttribute('src', 'img/darkfantasy/Dracula.png')
 
     } else if (secondQuiz.checked === true) {
 
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be punshing Like Saitama`
+        quizParagraph.innerHTML = `${quizName.value} We think you will love Saitama`
         quizQuestion.setAttribute('src', 'img/animefantasy/Saitama.png')
 
     } else if (thirdQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be a "inevitable" Like Thanos`
+        quizParagraph.innerHTML = `${quizName.value} you will definitely like Thanos`
         quizQuestion.setAttribute('src', 'img/darkfantasy/thanos aud.png')
 
     } else if (forthQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be crazy Like the Joker`
+        quizParagraph.innerHTML = `${quizName.value} You are  crazy just like the Joker`
         quizQuestion.setAttribute('src', 'img/darkfantasy/Joker.png')
 
     } else if (fifthQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be Like Zues`
+        quizParagraph.innerHTML = `${quizName.value} You will love Zues, god of the sky, lightning and the thunder`
         quizQuestion.setAttribute('src', 'img/historicalfantasy/Zues.png')
 
     } else if (sixthQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be Like Naruto`
+        quizParagraph.innerHTML = `${quizName.value} you will definitely like Naruto`
         quizQuestion.setAttribute('src', 'img/animefantasy/Naruto.png')
 
     } else if (seventhQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going to be intelligent Like Sherlok Holmes`
+        quizParagraph.innerHTML = `${quizName.value} You are brighto just like Sherlok Holmes`
         quizQuestion.setAttribute('src', 'img/novlsfantasy/sherlok.png')
 
     } else {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think You Are Going To Like Nasus..oh oh we mean Anubis`
+        quizParagraph.innerHTML = `${quizName.value} We think you would be like Nasus..oh oh we mean Anubis`
         quizQuestion.setAttribute('src', 'img/historicalfantasy/Temple Guard.png')
 
     }

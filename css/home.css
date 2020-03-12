@@ -3,6 +3,10 @@
     display: inline-block;
     width: 70%;
 }
+*{
+    font-family: 'Risque', cursive;
+
+}
 
 #quizSection {
     background-image: url(/img/222.jpg);

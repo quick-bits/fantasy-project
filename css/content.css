@@ -1,3 +1,7 @@
+*{
+    font-family: 'Risque', cursive;
+
+}
 #logo {
     width: 150px;
     height: auto;
@@ -231,7 +235,14 @@ button {
     padding-bottom: 1px;
     margin-left: 32px;
     cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 10%;
+    
 }
+button:hover {
+    background-color: maroon;
+    color: white;
+  }
 
 input {
     cursor: pointer;
@@ -275,7 +286,7 @@ div {
     margin-left: -326px;
 }
 
-#thanosaud {
+#Thanos {
     margin-left: -324px;
 }
 

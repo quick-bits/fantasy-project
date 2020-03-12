@@ -3,6 +3,10 @@ body {
     background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
     font-family: 'Barlow', sans-serif;
 }
+*{
+    font-family: 'Risque', cursive;
+
+}
 
 .sp-container h2 {
     position: absolute;
