@@ -73,3 +73,18 @@ footer{
     height: 25px;
     padding-top: 8px;
 }
+button:hover {
+    background-color: maroon;
+    color: white;
+  }
+  button {
+      cursor: pointer;
+      
+}
+input {
+    cursor: pointer;
+}
+input:hover{
+    background-color: maroon;
+    color: white;
+}

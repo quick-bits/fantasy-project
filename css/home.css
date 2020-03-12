@@ -315,3 +315,18 @@ audio {
     position: relative;
     left: 500px;
 }
+button:hover {
+    background-color: maroon;
+    color: white;
+  }
+  button {
+      cursor: pointer;
+      
+}
+input {
+    cursor: pointer;
+}
+input:hover{
+    background-color: maroon;
+    color: white;
+}

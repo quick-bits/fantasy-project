@@ -254,3 +254,19 @@ audio:active {
     width: 360px;
     height: 360px;
 }
+
+button:hover {
+    background-color: maroon;
+    color: white;
+  }
+  button {
+      cursor: pointer;
+      
+}
+input {
+    cursor: pointer;
+}
+input:hover{
+    background-color: maroon;
+    color: white;
+}

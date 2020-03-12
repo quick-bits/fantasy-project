@@ -247,6 +247,10 @@ button:hover {
 input {
     cursor: pointer;
 }
+input:hover{
+    background-color: maroon;
+    color: white;
+}
 
 
 /* audio buttons for each character */
