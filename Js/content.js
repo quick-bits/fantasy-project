@@ -234,7 +234,7 @@ novelConstructor.prototype.renderNovels = function() {
         var header = document.createElement('h1');
         imageSection1.appendChild(header);
         header.textContent = "Novel fantasy section";
-        for (var i = 0; i < 10; i++) {
+        for (var i = 0; i < 9; i++) {
 
             var imageSection = document.createElement('div');
             imageSection1.appendChild(imageSection);
