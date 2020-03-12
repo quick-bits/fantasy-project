@@ -18,7 +18,7 @@ div.picNo1 {
     padding: 3%;
     background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
     float: left;
-    margin-left: 5%;
+    /* margin-right: 150px; */
 }
 
 .picNo2 {
@@ -26,12 +26,22 @@ div.picNo1 {
     width: 20%;
     background-color: white;
     margin-bottom: 25px;
-    padding: 3%;
+    /* padding: 3%; */
     background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
     float: left;
-    margin-left: 200px;
+    margin-left: 33%;
 }
+#picNo3{
+    position: relative;
+    width: 20%;
+    background-color: white;
+    margin-bottom: 25px;
+    /* padding: 3%; */
+    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    float: left;  
+    margin-left: 7%;
 
+}
 
 /* div.picNo1{
     width: 20%;
@@ -112,5 +122,11 @@ p {
 }
 
 .picNo2:hover .middle {
+    opacity: 1;
+}
+#picNo3:hover .img1 {
+    opacity: 0.3;
+}
+#picNo3:hover .middle {
     opacity: 1;
 }
