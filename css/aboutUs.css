@@ -23,34 +23,98 @@ body {
 div.picNo1 {
     position: relative;
     width: 20%;
-    background-color: white;
+    /* background-color: white; */
     margin-bottom: 25px;
     padding: 3%;
-    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    /* background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed; */
     float: left;
     /* margin-right: 150px; */
+    animation-name: ammar;
+    animation-duration: 1.5s;
 }
-
-.picNo2 {
+@keyframes ammar{
+  
+    from{right: 400px; bottom: 300px; opacity: 0;}
+    to{right: 0px;bottom: 0px; opacity: 1;}
+}
+div.picNo2 {
     position: relative;
     width: 20%;
-    background-color: white;
+    /* background-color: white; */
+    margin-bottom: 25px;
+    padding: 3%;
+    /* background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed; */
+    float: left;
+    /* margin-right: 150px; */
+    opacity: 0;
+    animation: forwards;
+    animation-name: nermeen;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+
+@keyframes nermeen{
+  
+    from{bottom: 600px; opacity: 0;}
+    to{bottom: 0px; opacity: 1;}
+}
+
+
+    div.picNo3 {
+        position: relative;
+        width: 20%;
+        /* background-color: white; */
+        margin-bottom: 25px;
+        padding: 3%;
+        /* background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed; */
+        float: left;
+        animation-name: amer;
+        animation-duration: 1.5s;
+        /* margin-right: 150px; */}
+
+        @keyframes amer{
+            from{left: 400px; bottom: 300px; opacity: 0;}
+            to{left: 0px;bottom: 0px; opacity: 1;}
+        }
+
+.picNo4 {
+    position: relative;
+    width: 20%;
+    /* background-color: white; */
     margin-bottom: 25px;
     /* padding: 3%; */
-    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    /* background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed; */
     float: left;
     margin-left: 33%;
+    opacity: 0;
+    animation: forwards;
+    animation-name:anolla ;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+@keyframes anolla{
+    from{right: 400px; top: 300px; opacity: 0;}
+    to{right: 0px;top: 0px; opacity: 1;}
 }
 
-#picNo3 {
+.picNo5 {
     position: relative;
     width: 20%;
-    background-color: white;
+    /* background-color: white; */
     margin-bottom: 25px;
     /* padding: 3%; */
-    background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
+    /* background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed; */
     float: left;
     margin-left: 7%;
+    opacity: 0;
+    animation: forwards;
+    animation-name: hussein;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+}
+@keyframes hussein{
+    from{left: 400px; top: 300px; opacity: 0;}
+    to{left: 0px;top: 0px; opacity: 1;}
 }
 
 
@@ -135,6 +199,20 @@ p {
 .picNo1:hover .middle {
     opacity: 1;
 }
+.picNo2:hover .img1 {
+    opacity: 0.3;
+}
+
+.picNo2:hover .middle {
+    opacity: 1;
+}
+.picNo3:hover .img1 {
+    opacity: 0.3;
+}
+
+.picNo3:hover .middle {
+    opacity: 1;
+}
 
 .text {
     /* background-color: #4CAF50; */
@@ -156,22 +234,22 @@ p {
     font-weight: bolder;
 }
 
-.picNo2:hover .img1 {
+.picNo4:hover .img1 {
     opacity: 0.3;
 }
 
-.picNo2:hover .img2 {
+.picNo4:hover .img2 {
     opacity: 0.3;
 }
 
-.picNo2:hover .middle {
+.picNo4:hover .middle {
     opacity: 1;
 }
 
-#picNo3:hover .img2 {
+.picNo5:hover .img2 {
     opacity: 0.3;
 }
 
-#picNo3:hover .middle {
+.picNo5:hover .middle {
     opacity: 1;
 }
