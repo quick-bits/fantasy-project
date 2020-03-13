@@ -1,6 +1,6 @@
 'use strict'
 var darkFantasy = ['BabaYaga', 'Death', 'Dracula', 'Joker', 'Thanos'];
-var Animes = ['Naruto', 'Pikatchu', 'Saitama', 'AllForOne'];
+var Animes = ['Naruto', 'Pikatchu', 'Saitama', 'AllForOne', 'Kaneki'];
 var Hitorical = ['Loki', 'medusa', 'RA', 'Zues', 'sleepparalysis', 'TempleGuard'];
 var novels = ['conan', 'emma', 'victorFrankenstien', 'peterpan', 'jaygatsby', 'missHavisham', 'RolandDeschain', 'sherlok', 'harryPotter'];
 
@@ -40,7 +40,7 @@ function randomHistory() {
     if (Hitorical[index] === 'Loki') {
 
         imgs.setAttribute('src', `img/historicalfantasy/Loki.png`);
-        describtion.textContent = " In Norse mythology, Loki is the God of mischief and trickery, his father was the giant Fárbauti and he is the stepbrother of Thor.  apper: 1. Thor ragnarok 2017 2. Thor 2011  3. the avengers end game 2019   4. the avengers 2012   5. Thor the dark world 2013 6. the avengers infinity war 2018 7. the avengers age of ultron 2015 8  lego marvel super hero: Maximum Overload (animition 2013) 9. Thor: Tales of Asgard (Fantasy / Action 2011)";
+        describtion.textContent = "Loki: In Norse mythology, Loki is the God of mischief and trickery, his father was the giant Fárbauti and he is the stepbrother of Thor.  apper: 1. Thor ragnarok 2017 2. Thor 2011  3. the avengers end game 2019   4. the avengers 2012   5. Thor the dark world 2013 6. the avengers infinity war 2018 7. the avengers age of ultron 2015 8  lego marvel super hero: Maximum Overload (animition 2013) 9. Thor: Tales of Asgard (Fantasy / Action 2011)";
         audioClips.setAttribute('src', 'aud/historicalfantasy/Loki.mp3');
         audioClips.load();
         audioClips.controls = true;
@@ -60,17 +60,17 @@ function randomHistory() {
         audioClips.load();
         audioClips.controls = true;
     }
-    if (Hitorical[index] === 'sleep paralysis') {
+    if (Hitorical[index] === 'sleepparalysis') {
         imgs.setAttribute('src', `img/historicalfantasy/sleepparalysis.png`);
         describtion.textContent = "Sleep paralysis is a feeling of being unable to move, it is most likely to occur during adolescence, the episodes last from a few seconds to a few minutes. Stress, sleep deprivation, and panic disorder may trigger it, an inability to move or speak is an essential feature, and there may be hallucinations. apper: 1.  Sleep-Paralysis (2004)  2.  Mara (I) (2018) 3. Slumber (I) (2017) 4. The X Files (1993–2018) Episode: Ghouli (2018). 5.  Lucid (2017)";
         audioClips.setAttribute('src', 'aud/historicalfantasy/SleepParalysis.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
-    if (Hitorical[index] === 'Temple Guard') {
+    if (Hitorical[index] === 'TempleGuard') {
         imgs.setAttribute('src', `img/historicalfantasy/TempleGuard.png`);
         describtion.textContent = "Anubis or Inpu, Anpu in Ancient Egyptian is the Greek name of the god of death, mummification, embalming, the afterlife, cemeteries, tombs, and the Underworld, in ancient Egyptian religion, usually depicted as a canine or a man with a canine head. Archeologists have identified Anubis's sacred animal as an Egyptian canid, the African golden wolf.";
-        audioClips.setAttribute('src', 'aud/historicalfantasy/Temple Guard.mp3');
+        audioClips.setAttribute('src', 'aud/historicalfantasy/TempleGuard.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
@@ -90,22 +90,29 @@ function randomAnime() {
     }
     if (Animes[index] === 'Pikatchu') {
         imgs.setAttribute('src', `img/animefantasy/Pikatchu.png`);
-        describtion.textContent = " A young boy with his trusted Pikachu travel the region with different companions and Pokémon in a quest to become a Pokémon Master… it’s a classic story that we’ve all heard in bits & pieces. This is no conventional fantasy series, and the newer episodes feel more aimed at kids.";
+        describtion.textContent = " Pikatchu: A young boy with his trusted Pikachu travel the region with different companions and Pokémon in a quest to become a Pokémon Master… it’s a classic story that we’ve all heard in bits & pieces. This is no conventional fantasy series, and the newer episodes feel more aimed at kids.";
         audioClips.setAttribute('src', 'aud/animefsntsdy/Pikatchu.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
     if (Animes[index] === 'Saitama') {
         imgs.setAttribute('src', `img/animefantasy/Saitama.png`);
-        describtion.textContent = "Saitama is an ordinary-looking bald man with a thin but well-built physique and is of average height and weight. He used to have a full head of short black hair but lost it due to the intensity of his hero training regimen. Saitama (サイタマ, Saitama) is the main protagonist of One-Punch Man and the most powerful being to exist in the series. ";
+        describtion.textContent = "Saitama: is an ordinary-looking bald man with a thin but well-built physique and is of average height and weight. He used to have a full head of short black hair but lost it due to the intensity of his hero training regimen. Saitama (サイタマ, Saitama) is the main protagonist of One-Punch Man and the most powerful being to exist in the series. ";
         audioClips.setAttribute('src', 'aud/animefsntsdy/Saitama.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
     if (Animes[index] === 'AllForOne') {
         imgs.setAttribute('src', `img/animefantasy/AllForOne.png`);
-        describtion.textContent = "After being mortally injured by All Might years ago, All For One's face seems to be made entirely of scar tissue, extending from above his upper lip and covering his entire head and the back of his neck. As such, he has no visible nose, ears, hair or eyes, though the outlines of eye sockets can be seen. As a result of having no eyes, he cannot see properly, but “sees” by using an infrared vision Quirk and by sensing the directions of vibrations in the area around him, similar to echolocation. ";
+        describtion.textContent = "Al For One: After being mortally injured by All Might years ago, All For One's face seems to be made entirely of scar tissue, extending from above his upper lip and covering his entire head and the back of his neck. As such, he has no visible nose, ears, hair or eyes, though the outlines of eye sockets can be seen. As a result of having no eyes, he cannot see properly, but “sees” by using an infrared vision Quirk and by sensing the directions of vibrations in the area around him, similar to echolocation. ";
         audioClips.setAttribute('src', 'aud/animefsntsdy/AllForOne.mp3');
+        audioClips.load();
+        audioClips.controls = true;
+    }
+    if (Animes[index] === 'Kaneki') {
+        imgs.setAttribute('src', `img/animefantasy/Kaneki.png`);
+        describtion.textContent = "Kaneki: Originally born as a human, his encounter with a female ghoul under the name of Kamishiro Rize forced him to undergo emergency surgery procedures after his assault by her.  ";
+        audioClips.setAttribute('src', 'aud/animefsntsdy/Kaneki.mp3');
         audioClips.load();
         audioClips.controls = true;
     }
@@ -158,7 +165,7 @@ function renderImages() {
     var index = randomPick(0, novels.length - 1);
     if (novels[index] === 'conan') {
         imgs.setAttribute('src', `img/novlsfantasy/conan.png`);
-        describtion.textContent = 'Conan the Barbarian (also known as Conan the Cimmerian) is a fictional sword and sorcery hero who originated in pulp magazines and has since been adapted to books, comics, several films (including Conan the Barbarian and Conan the Destroyer), television programs (animated and live-action), video games, role-playing games, and other media. The character was created by writer Robert E. Howard in 1932 for a series of fantasy stories published in Weird Tales magazine';
+        describtion.textContent = 'Conan the Barbarian (also known as Conan the Cimmerian): is a fictional sword and sorcery hero who originated in pulp magazines and has since been adapted to books, comics, several films (including Conan the Barbarian and Conan the Destroyer), television programs (animated and live-action), video games, role-playing games, and other media. The character was created by writer Robert E. Howard in 1932 for a series of fantasy stories published in Weird Tales magazine';
         audioClips.setAttribute('src', 'aud/novlsfantasy/conan.mp3');
         audioClips.load();
         audioClips.controls = true;
@@ -179,7 +186,7 @@ function renderImages() {
     }
     if (novels[index] === 'harryPotter') {
         imgs.setAttribute('src', `img/novlsfantasy/harrypotter.png`);
-        describtion.textContent = "Harry James Potter is the titular protagonist of J. K. Rowling's Harry Potter series. The majority of the books' plot covers seven years in the life of the orphan Harry, who, on his eleventh birthday, learns he is a wizard. Thus, he attends Hogwarts School of Witchcraft and Wizardry to practice magic under the guidance of the kindly headmaster Albus Dumbledore and other school professors along with his best friends Ron Weasley and Hermione Granger.";
+        describtion.textContent = "Harry James Potter: is the titular protagonist of J. K. Rowling's Harry Potter series. The majority of the books' plot covers seven years in the life of the orphan Harry, who, on his eleventh birthday, learns he is a wizard. Thus, he attends Hogwarts School of Witchcraft and Wizardry to practice magic under the guidance of the kindly headmaster Albus Dumbledore and other school professors along with his best friends Ron Weasley and Hermione Granger.";
         audioClips.setAttribute('src', 'aud/novlsfantasy/harrypotter.mp3');
         audioClips.load();
         audioClips.controls = true;
@@ -272,7 +279,7 @@ function personalQuiz(event) {
     } else if (thirdQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
         quizParagraph.innerHTML = `${quizName.value} you will definitely like Thanos`
-        quizQuestion.setAttribute('src', 'img/darkfantasy/thanos aud.png')
+        quizQuestion.setAttribute('src', 'img/darkfantasy/Thanos.png')
 
     } else if (forthQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
@@ -297,7 +304,7 @@ function personalQuiz(event) {
     } else {
         quizSection.appendChild(quizParagraph);
         quizParagraph.innerHTML = `${quizName.value} We think you would be like Nasus..oh oh we mean Anubis`
-        quizQuestion.setAttribute('src', 'img/historicalfantasy/Temple Guard.png')
+        quizQuestion.setAttribute('src', 'img/historicalfantasy/TempleGuard.png')
 
     }
 }

@@ -1,10 +1,10 @@
-*{
+* {
     font-family: 'Risque', cursive;
-
 }
-#logo {
-    width: 150px;
-    height: auto;
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
 
 #idBabaYaga {
@@ -48,7 +48,8 @@
     margin-left: -115px;
 }
 
-h1 {
+h3 {
+    font-size: x-large;
     color: whitesmoke;
     border: 1px solid rgb(165, 44, 44);
     text-align: center;
@@ -59,6 +60,7 @@ h1 {
 #contnet-form {
     width: 90%;
     padding-left: 300px;
+    padding-top: 30px;
     margin: 8px 0;
     box-sizing: border-box;
 }
@@ -69,6 +71,7 @@ p {
     margin-left: 284px;
     text-align: left;
     color: whitesmoke;
+    text-align: justify;
 }
 
 h2 {
@@ -111,6 +114,7 @@ h2 {
     width: 458px;
     height: 350px;
     margin-top: -70px;
+    padding-right: 30px;
 }
 
 
@@ -177,13 +181,16 @@ h2 {
     float: left;
     width: 250px;
     height: 350px;
+    position: relative;
+    top: -100px;
 }
 
 #idsherlok {
     float: left;
     width: 308px;
     height: 414px;
-    margin-top: -25px;
+    margin-top: 0px;
+    padding-right: 30px;
 }
 
 #idAllForOne {
@@ -237,17 +244,18 @@ button {
     cursor: pointer;
     transition-duration: 0.4s;
     border-radius: 10%;
-    
 }
+
 button:hover {
     background-color: maroon;
     color: white;
-  }
+}
 
 input {
     cursor: pointer;
 }
-input:hover{
+
+input:hover {
     background-color: maroon;
     color: white;
 }
@@ -261,12 +269,25 @@ input:hover{
     margin-left: 4px;
 }
 
+#idKaneki {
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin-top: 0px;
+    margin-left: 32px;
+    padding-right: 30px;
+}
+
+#Kaneki {
+    margin-left: 0px;
+}
+
 div {
     margin: 0 auto;
     border: 1px solid rgb(165, 44, 44);
     padding: 100px;
     width: 80%;
-    padding: 80px;
+    padding: 100px;
 }
 
 #Pikatchu {
@@ -295,7 +316,7 @@ div {
 }
 
 #Medusa {
-    margin-left: 0px;
+    margin-left: px;
 }
 
 #Loki {
@@ -316,6 +337,7 @@ div {
 
 #sherlok {
     margin-left: 0px;
+    margin-bottom: 0px;
 }
 
 #conan {

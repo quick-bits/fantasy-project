@@ -208,6 +208,8 @@ renderStorage7();
 function histoRender() {
 
     if (newFav == 'Zues') {
+
+
         var h2E1 = document.createElement('h2');
         favoriteCharacter1.appendChild(h2E1);
         h2E1.textContent = historicalObj[0].name;
@@ -324,13 +326,14 @@ var newFav = [];
 var newFav1 = [];
 var newFav2 = [];
 var newFav3 = [];
+var newFav4 = [];
 
-var animeArray = ['AllForOne', 'Naruto', 'Pikatchu', 'Saitama'];
+var animeArray = ['AllForOne', 'Naruto', 'Pikatchu', 'Saitama', "Kaneki"];
 var anmieConstructor = function(name) {
     this.name = name;
     this.audio = `aud/animefsntsdy/${name}.mp3`;
     this.img = `img/animefantasy/${name}.png`;
-    this.descreption = ["After being mortally injured by All Might years ago, All For One's face seems to be made entirely of scar tissue, extending from above his upper lip and covering his entire head and the back of his neck. As such, he has no visible nose, ears, hair or eyes, though the outlines of eye sockets can be seen.", "Naruto Uzumaki (Japanese: うずまき ナルト, Hepburn: Uzumaki Naruto) is a fictional character in the anime and manga Naruto, created by Masashi Kishimoto. Serving as the eponymous protagonist of the series, he is a young ninja from the fictional village of Konohagakure. The villagers ridicule Naruto on account of the Nine-Tailed Demon Fox—a malevolent creature that attacked Konohagakure—that was sealed away in Naruto's body. Despite this, he aspires to become his village's leader, the Hokage..", "Saitama is an ordinary-looking bald man with a thin but well-built physique and is of average height and weight. He used to have a full head of short black hair but lost it due to the intensity of his hero training regimen. Saitama (サイタマ, Saitama) is the main protagonist of One-Punch Man and the most powerful being to exist in the series.", " Pikachu are small, chubby, and incredibly cute mouse-like Pokémon. They are almost completely covered by yellow fur. They have long yellow ears that are tipped with black. A Pikachu's back has two brown stripes, and its large tail is notable for being shaped like a lightning bolt. ."];
+    this.descreption = ["After being mortally injured by All Might years ago, All For One's face seems to be made entirely of scar tissue, extending from above his upper lip and covering his entire head and the back of his neck. As such, he has no visible nose, ears, hair or eyes, though the outlines of eye sockets can be seen.", "Naruto Uzumaki (Japanese: うずまき ナルト, Hepburn: Uzumaki Naruto) is a fictional character in the anime and manga Naruto, created by Masashi Kishimoto. Serving as the eponymous protagonist of the series, he is a young ninja from the fictional village of Konohagakure. The villagers ridicule Naruto on account of the Nine-Tailed Demon Fox—a malevolent creature that attacked Konohagakure—that was sealed away in Naruto's body. Despite this, he aspires to become his village's leader, the Hokage..", "Saitama is an ordinary-looking bald man with a thin but well-built physique and is of average height and weight. He used to have a full head of short black hair but lost it due to the intensity of his hero training regimen. Saitama (サイタマ, Saitama) is the main protagonist of One-Punch Man and the most powerful being to exist in the series.", " Pikachu are small, chubby, and incredibly cute mouse-like Pokémon. They are almost completely covered by yellow fur. They have long yellow ears that are tipped with black. A Pikachu's back has two brown stripes, and its large tail is notable for being shaped like a lightning bolt.", "Originally born as a human, his encounter with a female ghoul under the name of Kamishiro Rize forced him to undergo emergency surgery procedures after his assault by her. "];
     animeObj.push(this);
 }
 animeObj = [];
@@ -356,11 +359,14 @@ function renderStorage3() {
     var newContent3 = JSON.parse(localStorage.getItem('favorite4anime'));
     newFav3[0] = newContent3;
     console.log(newFav3[0]);
+    var newContent4 = JSON.parse(localStorage.getItem('favorite4anime'));
+    newFav4[0] = newContent4;
+
 
 }
 renderStorage3();
 
-var animeArray = ['AllForOne', 'Naruto', 'Pikatchu', 'Saitama'];
+
 
 function animeRender() {
 
@@ -436,6 +442,24 @@ function animeRender() {
         audE1.controls = true;
         audE1.load();
     }
+    if (newFav4[0] == 'Kaneki') {
+        var h2E1 = document.createElement('h2');
+        favoriteCharacter1.appendChild(h2E1);
+        h2E1.textContent = animeObj[4].name;
+        var newImg = document.createElement('img');
+        favoriteCharacter1.appendChild(newImg);
+        newImg.setAttribute('src', animeObj[4].img);
+        newImg.setAttribute('id', 'Loki');
+        // console.log(darkObj[0].img);
+        var p1E1 = document.createElement('p');
+        favoriteCharacter1.appendChild(p1E1);
+        p1E1.textContent = animeObj[4].descreption[4];
+        var audE1 = document.createElement('audio');
+        favoriteCharacter1.appendChild(audE1);
+        audE1.setAttribute('src', animeObj[4].audio);
+        audE1.controls = true;
+        audE1.load();
+    }
 }
 animeRender();
 
@@ -457,7 +481,7 @@ var novelConstructor = function(name) {
     this.name = name;
     this.audio = `aud/novlsfantasy/${name}.mp3`;
     this.img = `img/novlsfantasy/${name}.png`;
-    this.descreption = ['Conan the Barbarian (also known as Conan the Cimmerian) is a fictional sword and sorcery hero who originated in pulp magazines and has since been adapted to books, comics, several films (including Conan the Barbarian and Conan the Destroyer), television programs (animated and live-action), video games, role-playing games, and other media. The character was created by writer Robert E. Howard in 1932 for a series of fantasy stories published in Weird Tales magazine. appearance: Conan has \'sullen\', \'smoldering\', and \'volcanic\'blue eyes with a black \'square-cut mane\'. Howard once describes him as having a hairy chest and, while comic book interpretations often portray Conan as wearing a loincloth or other minimalist clothing to give him a more barbaric image, Howard describes the character as wearing whatever garb is typical for the kingdom and culture in which Conan finds himself.', "Emma Woodhouse is the 21-year-old protagonist of Jane Austen's novel Emma. She is described in the novel's opening sentence as \"handsome, clever, and rich, with a comfortable home and a happy disposition... and had lived nearly twenty-one years in the world with very little to distress or vex her.\" Jane Austen, while writing the novel, called Emma, \"a heroine whom no-one but myself will much like.\" Emma is an independent, wealthy woman who lives with her father in their home Hartfield in the English countryside near the village of Highbury.", "Harry James Potter is the titular protagonist of J. K. Rowling's Harry Potter series. The majority of the books' plot covers seven years in the life of the orphan Harry, who, on his eleventh birthday, learns he is a wizard. Thus, he attends Hogwarts School of Witchcraft and Wizardry to practice magic under the guidance of the kindly headmaster Albus Dumbledore and other school professors along with his best friends Ron Weasley and Hermione Granger.", "Jay Gatsby (originally named James \"Jimmy\" Gatz) is the title character of the 1925 F. Scott Fitzgerald novel The Great Gatsby. Gatsby is in fact a fictional character, a millionaire and the owner of a luxurious mansion where extravagant parties are often hosted, is described by the novel's narrator, Nick Carraway, as being \"the single most hopeful person I've ever met\". ", "Miss Havisham is a character in the Charles Dickens novel Great Expectations (1861). She is a wealthy spinster, once jilted at the altar, who insists on wearing her wedding dress for the rest of her life. She lives in a ruined mansion with her adopted daughter, Estella. ", 'Peter Pan is a fictional character created by Scottish novelist and playwright J. M. Barrie. A free-spirited and mischievous young boy who can fly and never grows up, Peter Pan spends his never-ending childhood having adventures on the mythical island of Neverland as the leader of the Lost Boys, interacting with fairies, pirates, mermaids, Native Americans, and occasionally ordinary children from the world outside Neverland. ', "Roland Deschain of Gilead is a fictional character and the protagonist of Stephen King's The Dark Tower series. He is the son of Steven and Gabrielle Deschain and is descended from a long line of \"gunslingers\", peacekeepers and diplomats of Roland's society. Roland becomes a gunslinger at the unheard-of age of 14 after being manipulated into taking the \"trial of manhood\" by Marten Broadcloak, his father's adviser and an alias of Randall Flagg.", "1. small describtion:Sherlock Holmes is a fictional private detective created by British author Sir Arthur Conan Doyle.  Referring to himself as a 'consulting detective' in the stories, Holmes is known for his proficiency.", 'Victor Frankenstein is the main character in Mary Shelleys 1818 novel Frankenstein; or, The Modern Prometheus. He is a Swiss scientist (born in Naples, Italy) who, after studying chemical processes and the decay of living beings, gains an insight into the creation of life and gives life to his own creature, often referred to as Frankensteins monster, or often colloquially referred to as simply "Frankenstein".'];
+    this.descreption = ['Conan the Barbarian (also known as Conan the Cimmerian) is a fictional sword and sorcery hero who originated in pulp magazines and has since been adapted to books, comics, several films (including Conan the Barbarian and Conan the Destroyer).', "Emma Woodhouse is the 21-year-old protagonist of Jane Austen's novel Emma. She is described in the novel's opening sentence as \"handsome, clever, and rich, with a comfortable home and a happy disposition... and had lived nearly twenty-one years in the world with very little to distress or vex her.\" Jane Austen, while writing the novel, called Emma, \"a heroine whom no-one but myself will much like.\" Emma is an independent, wealthy woman who lives with her father in their home Hartfield in the English countryside near the village of Highbury.", "Harry James Potter is the titular protagonist of J. K. Rowling's Harry Potter series. The majority of the books' plot covers seven years in the life of the orphan Harry, who, on his eleventh birthday, learns he is a wizard. Thus, he attends Hogwarts School of Witchcraft and Wizardry to practice magic under the guidance of the kindly headmaster Albus Dumbledore and other school professors along with his best friends Ron Weasley and Hermione Granger.", "Jay Gatsby (originally named James \"Jimmy\" Gatz) is the title character of the 1925 F. Scott Fitzgerald novel The Great Gatsby. Gatsby is in fact a fictional character, a millionaire and the owner of a luxurious mansion where extravagant parties are often hosted, is described by the novel's narrator, Nick Carraway, as being \"the single most hopeful person I've ever met\". ", "Miss Havisham is a character in the Charles Dickens novel Great Expectations (1861). She is a wealthy spinster, once jilted at the altar, who insists on wearing her wedding dress for the rest of her life. She lives in a ruined mansion with her adopted daughter, Estella. ", 'Peter Pan is a fictional character created by Scottish novelist and playwright J. M. Barrie. A free-spirited and mischievous young boy who can fly and never grows up, Peter Pan spends his never-ending childhood having adventures on the mythical island of Neverland as the leader of the Lost Boys, interacting with fairies, pirates, mermaids, Native Americans, and occasionally ordinary children from the world outside Neverland. ', "Roland Deschain of Gilead is a fictional character and the protagonist of Stephen King's The Dark Tower series. He is the son of Steven and Gabrielle Deschain and is descended from a long line of \"gunslingers\", peacekeepers and diplomats of Roland's society. Roland becomes a gunslinger at the unheard-of age of 14 after being manipulated into taking the \"trial of manhood\" by Marten Broadcloak, his father's adviser and an alias of Randall Flagg.", "Sherlock Holmes is a fictional private detective created by British author Sir Arthur Conan Doyle.  Referring to himself as a 'consulting detective' in the stories, Holmes is known for his proficiency.", 'Victor Frankenstein is the main character in Mary Shelleys 1818 novel Frankenstein; or, The Modern Prometheus. He is a Swiss scientist (born in Naples, Italy) who, after studying chemical processes and the decay of living beings, gains an insight into the creation of life and gives life to his own creature, often referred to as Frankensteins monster, or often colloquially referred to as simply "Frankenstein".'];
     novelObj.push(this);
 }
 novelObj = [];

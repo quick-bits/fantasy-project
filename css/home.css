@@ -3,9 +3,9 @@
     display: inline-block;
     width: 70%;
 }
-*{
-    font-family: 'Risque', cursive;
 
+* {
+    font-family: 'Risque', cursive;
 }
 
 #quizSection {
@@ -32,8 +32,8 @@
 
 #quizSection p {
     position: relative;
-    bottom: 450px;
-    left: 700px;
+    bottom: 430px;
+    left: 690px;
     font-size: large;
 }
 
@@ -54,6 +54,19 @@
     margin-right: auto;
     margin-bottom: 30px;
     overflow: hidden;
+    -webkit-animation: glowlogo 2s ease-in-out infinite alternate;
+    -moz-animation: glowlogo 2s ease-in-out infinite alternate;
+    animation: glowlogo 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowlogo {
+    from {
+        color: #fff;
+        box-shadow: 0 0 10px #ff0800, 0 0 10px #d9ff00, 0 0 10px#ff0800, 0 0 10px#000b6e;
+    }
+    to {
+        box-shadow: 0 0 10px #ff0800, 0 0 10px #ff8800, 0 0 20px #ffe600, 0 0 50px #ff0000c9;
+    }
 }
 
 #slider figure {
@@ -67,7 +80,7 @@
 
 #slider figure img {
     width: 20%;
-    height: 70%;
+    height: 100%;
     float: left;
 }
 
@@ -137,19 +150,18 @@ p span {
     /* font-size: large; */
     border-top: solid 10px #310404;
     border-bottom: solid 5px #310404;
-    -webkit-animation: glow 2s ease-in-out infinite alternate;
-    -moz-animation: glow 2s ease-in-out infinite alternate;
-    animation: glow 2s ease-in-out infinite alternate;
+    -webkit-animation: glowa 2s ease-in-out infinite alternate;
+    -moz-animation: glowa 2s ease-in-out infinite alternate;
+    animation: glowa 2s ease-in-out infinite alternate;
 }
 
-@-webkit-keyframes glow {
+@-webkit-keyframes glowa {
     from {
         color: #fff;
-        text-shadow: 0 0 10px #ff0800, 0 0 20px #ff0800, 0 0 30px#ff0800, 0 0 40px#ff0800, 0 0 50px #ff0800, 0 0 60px #ff0800, 0 0 70px #ff0800, 0 0 90px #ff0800;
+        text-shadow: 0 0 10px #ff0800, 0 0 10px #d9ff00, 0 0 10px#ff0800, 0 0 10px#000b6e;
     }
     to {
-        color: gray;
-        text-shadow: 0 0 20px #ff0800, 0 0 30px #ff0800, 0 0 40px #ff0800, 0 0 50px #ff0800, 0 0 60px #ff0800, 0 0 70px #ff0800, 0 0 80px #ff0800, 0 1 90px #ff0800;
+        text-shadow: 0 0 10px #ff0800, 0 0 10px #ff0800, 0 0 20px #ff0800, 0 0 50px #ff0800;
     }
 }
 
@@ -315,18 +327,21 @@ audio {
     position: relative;
     left: 500px;
 }
+
 button:hover {
     background-color: maroon;
     color: white;
-  }
-  button {
-      cursor: pointer;
-      
 }
+
+button {
+    cursor: pointer;
+}
+
 input {
     cursor: pointer;
 }
-input:hover{
+
+input:hover {
     background-color: maroon;
     color: white;
 }

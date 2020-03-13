@@ -4,10 +4,11 @@ body {
     font-family: 'Barlow', sans-serif;
     color: white;
 }
-*{
-    font-family: 'Risque', cursive;
 
+* {
+    font-family: 'Risque', cursive;
 }
+
 header {
     /* background-color: #310404; */
     /* background-image: url(/img/see.jpg); */
@@ -17,11 +18,53 @@ header {
     border-bottom: solid 3px gray;
     text-align: right;
     height: 80px;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    -webkit-animation: glowlogo 2s ease-in-out infinite alternate;
+    -moz-animation: glowlogo 2s ease-in-out infinite alternate;
+    animation: glowlogo 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowlogo {
+    from {
+        color: #fff;
+        box-shadow: 0 0 10px #ff0800, 0 0 10px #d9ff00, 0 0 10px#ff0800, 0 0 10px#000b6e;
+    }
+    to {
+        box-shadow: 0 0 10px #ff0800, 0 0 10px #ff8800, 0 0 20px #ffe600, 0 0 50px #ff0000c9;
+    }
+}
+
+#logo2 {
+    font-size: large;
+    float: left;
+    position: relative;
+    left: 170px;
+    top: 20px;
+    color: white;
+    -webkit-animation: glowlogo3 2s ease-in-out infinite alternate;
+    -moz-animation: glowlogo3 2s ease-in-out infinite alternate;
+    animation: glowlogo3 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowlogo3 {
+    from {
+        color: #fff;
+        text-shadow: 0 0 10px #ff0800, 0 0 10px #ff3300, 0 0 10px#ff0800, 0 0 10px#6e1a00;
+    }
+    to {
+        text-shadow: 0 0 10px #ff0800, 0 0 10px #ff8800, 0 0 20px #ffe600, 0 0 50px #ff0000c9;
+    }
+}
+
+#logo3 {
+    font-size: small;
+    float: left;
+    position: relative;
+    left: 30px;
+    top: 50px;
+    color: white;
+    -webkit-animation: glowlogo3 2s ease-in-out infinite alternate;
+    -moz-animation: glowlogo3 2s ease-in-out infinite alternate;
+    animation: glowlogo3 2s ease-in-out infinite alternate;
 }
 
 #logo {
@@ -30,6 +73,16 @@ header {
     left: 200px;
     bottom: 20px;
     height: 125px;
+    -webkit-animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+    }
 }
 
 nav ul {
@@ -62,9 +115,22 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    box-shadow: 4px 4px 6px 6px rgba(187, 16, 16, 0.911);
+    -webkit-animation: glowab 2s ease-in-out infinite alternate;
+    -moz-animation: glowab 2s ease-in-out infinite alternate;
+    animation: glowab 2s ease-in-out infinite alternate;
 }
-footer{
+
+@-webkit-keyframes glowab {
+    from {
+        color: #fff;
+        text-shadow: 0 0 10px #ff0800, 0 0 10px #ff0000, 0 0 20px#ff0800, 0 0 30px#ff0000;
+    }
+    to {
+        text-shadow: 0 0 10px #ff0800, 0 0 10px #ff0800, 0 0 20px #ff0800, 0 0 50px #ff0800;
+    }
+}
+
+footer {
     clear: both;
     font-family: 'Barlow', sans-serif;
     color: white;
@@ -73,18 +139,27 @@ footer{
     height: 25px;
     padding-top: 8px;
 }
+
 button:hover {
     background-color: maroon;
     color: white;
-  }
-  button {
-      cursor: pointer;
-      
 }
+
+button {
+    cursor: pointer;
+}
+
 input {
     cursor: pointer;
 }
-input:hover{
+
+input:hover {
     background-color: maroon;
     color: white;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
 }

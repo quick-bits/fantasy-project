@@ -3,9 +3,14 @@ body {
     background: #310404 url(https://i.ytimg.com/vi/wOvQAhzWCrM/maxresdefault.jpg) no-repeat center center fixed;
     font-family: 'Barlow', sans-serif;
 }
-*{
-    font-family: 'Risque', cursive;
 
+* {
+    font-family: 'Risque', cursive;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
 }
 
 .sp-container h2 {
@@ -258,15 +263,17 @@ audio:active {
 button:hover {
     background-color: maroon;
     color: white;
-  }
-  button {
-      cursor: pointer;
-      
 }
+
+button {
+    cursor: pointer;
+}
+
 input {
     cursor: pointer;
 }
-input:hover{
+
+input:hover {
     background-color: maroon;
     color: white;
 }
