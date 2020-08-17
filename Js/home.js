@@ -9,7 +9,6 @@ function randomPick(min, max) {
     return val;
 }
 
-
 var imageKlick = document.getElementById('category-images');
 var img1 = document.getElementById('1');
 var img2 = document.getElementById('2');
@@ -18,7 +17,6 @@ var img4 = document.getElementById('4');
 var message = document.getElementById('result-message');
 var submitform = document.getElementById('formSet');
 var describ = document.getElementById('character-desctintion');
-
 
 var imgs = document.createElement('img');
 describ.appendChild(imgs);
@@ -267,24 +265,24 @@ function personalQuiz(event) {
 
     if (firstQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think you will love Dracula`
-        quizQuestion.setAttribute('src', 'img/darkfantasy/Dracula.png')
+        quizParagraph.innerHTML = `${quizName.value} We think you will love Dracula`;
+        quizQuestion.setAttribute('src', 'img/darkfantasy/Dracula.png');
 
     } else if (secondQuiz.checked === true) {
 
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} We think you will love Saitama`
-        quizQuestion.setAttribute('src', 'img/animefantasy/Saitama.png')
+        quizParagraph.innerHTML = `${quizName.value} We think you will love Saitama`;
+        quizQuestion.setAttribute('src', 'img/animefantasy/Saitama.png');
 
     } else if (thirdQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} you will definitely like Thanos`
-        quizQuestion.setAttribute('src', 'img/darkfantasy/Thanos.png')
+        quizParagraph.innerHTML = `${quizName.value} you will definitely like Thanos`;
+        quizQuestion.setAttribute('src', 'img/darkfantasy/Thanos.png');
 
     } else if (forthQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);
-        quizParagraph.innerHTML = `${quizName.value} You are  crazy just like the Joker`
-        quizQuestion.setAttribute('src', 'img/darkfantasy/Joker.png')
+        quizParagraph.innerHTML = `${quizName.value} You are  crazy just like the Joker`;
+        quizQuestion.setAttribute('src', 'img/darkfantasy/Joker.png');
 
     } else if (fifthQuiz.checked === true) {
         quizSection.appendChild(quizParagraph);

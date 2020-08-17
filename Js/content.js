@@ -10,7 +10,6 @@ var historicalDiscreption = ['Zeus is the God of lighting, God of all Gods and r
     ''
 ];
 
-
 var darkObj = [];
 var historicalObj = [];
 var novelObj = [];
@@ -40,7 +39,6 @@ var historicalConstructor = function(name, historicalDiscreption) {
 }
 
 var novelConstructor = function(name) {
-
     this.name = name;
     this.audio = `aud/novlsfantasy/${name}.mp3`;
     this.img = `img/novlsfantasy/${name}.png`;
@@ -151,7 +149,6 @@ function handleSbmit(event) {
 var imageSection1 = document.getElementById('drak');
 darkConstructor.prototype.renderDark = function() {
 
-
     var header = document.createElement('h3');
     imageSection1.appendChild(header);
     header.textContent = "Dark fantasy section";
@@ -164,7 +161,6 @@ darkConstructor.prototype.renderDark = function() {
         image1.setAttribute('src', darkObj[i].img)
 
         imageSection.appendChild(image1);
-
         var namesCharacter = document.createElement('h2');
         imageSection.appendChild(namesCharacter);
         namesCharacter.textContent = darkObj[i].name;
@@ -325,8 +321,6 @@ function addFavorit(event) {
         localStorage.setItem('favorite2', favDark);
         yourFav++;
         navigation.textContent = `Favorite (${yourFav})`;
-
-
     }
     if (event.target.id === 'Dracula') {
         var newFav2 = [];

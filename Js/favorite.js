@@ -50,7 +50,6 @@ renderStorage();
 
 var favoriteCharacter1 = document.getElementById('yourFavotite1');
 
-
 function darkRender() {
     if (newFav[0] == 'BabaYaga') {
         // document.getElementsByClassName('sp-container').innrHTML = '';
